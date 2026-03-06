@@ -8,6 +8,9 @@ Objects that hold Stat Tag Collections are Orbit Objects (Players, Enemies, The 
 
 Objects that apply stat modifiers can be many things, but most commonly: Carryable mods (weapon mods, relics, homunculi), Mutators, Perks, Sector Twists. 
 
+Stat modifiers from weapon mods generally only propagate to stat collections within the weapon they are added to.
+However, relics and homunculi will try to apply modifiers across the whole player ship and its modules.
+
 ## Types of Stat Modifiers
 There are four types of modifiers that affect how the modifier value is mathematically applied to the base value on the stat.
 
