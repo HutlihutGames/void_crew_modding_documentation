@@ -4,4 +4,7 @@
 - Select your Team (or make one if you haven't already)
 - Select "Void Crew" under Communities
 - Select relevant categories
-- Press Submit
+- Press Submit  
+
+
+Note that it can take anywhere between 1 and 3 hours for uploaded/updated mods to be visible from mod managers.
