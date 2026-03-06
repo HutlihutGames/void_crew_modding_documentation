@@ -1,9 +1,9 @@
 # Testing Mods Locally
-Its a good idea to test your mods locally before uploading them for other people to use.
+It's a good idea to test your mods locally before uploading them for other people to use.
 
 ## Testing Asset Bundles without a Mod Manager
-Its possibly to test your asset bundles without installing them via a mod manager. 
-This can be useful if just trying quick iterations of the assets.
+It's possible to test your asset bundles without installing them via a mod manager. 
+This can be useful when testing quick iterations of the assets.
 
 - To do this, go to your Void Crew install folder (the same folder that has Void Crew.exe)
 - If there is no "Mods" folder, create one.
