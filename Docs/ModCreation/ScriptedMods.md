@@ -1,5 +1,5 @@
-# Custom Compiled Mods
-This section covers how to build your own mods with more complex custom functionality. 
+# Scripted Mods
+This section covers how to build your own mods with more complex custom functionality using your own code. 
 This section is not needed if you only want to make mods that simply contain new assets (See "Asset Mods" chapter).
 
 ## Installing Visual Studio

@@ -10,5 +10,12 @@ This can be useful when testing quick iterations of the assets.
 - Copy your asset bundle file pairs to the Mods folder. The game will natively try to load any asset bundles in the "Mods" folder.
 
 ## Testing Mods Locally Using Gale
-- In Gale, go to "Import" and select "local mod"
+- In Gale, go to "Import" on the toolbar and select "local mod"
+- Select your zipped mod file. It should now be visible in Gale and enabled.
+- Launch game via Gale to test your mod
+
+## Testing Mods Locally Using R2ModMan
+- In R2ModMan, click on your Void Crew profile in the bottom left corner
+- Choose "Import local mod" and then "Select file"
 - Select your zipped mod file
+- Start modded game via R2ModMan

@@ -1,34 +1,4 @@
-# Asset Bundle Creation
-In your Unity Void Crew Samples Project, you can find various example assets. 
-These are added to the game at runtime by exporting them as **Unity Asset Bundles**.
-
-Each asset bundle will need to be located in its own folder, which must contain all dependencies (textures, meshes, audio, prefabs). 
-
-You can include multiple asset prefabs per asset bundle. Each prefab you want your mod to load at runtime must have the **Void Crew Asset** component at its root.
-
-To export your asset:
-1. Select the folder containing the asset and its dependencies (such as "mod_banana")
-2. In the toolbar at the top of Unity, select "Void Crew" and in the dropdown press Export Selected
-
-
-You will find your exported asset at the root of your Unity Project folder, in a folder named "Exported Assets". 
-The asset bundle includes two files named after the folder you used to export the asset, one with a ".manifest" filetype. 
-Both of these files will be needed.
-
-_Note: if you do not see the ".manifest", [you need to enable file extensions in Windows explorer](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01#id0ebf=windows_11)._
-
-# Void Crew Common Library Components
-## Void Crew Asset
-This is the base component needed for the asset to be loaded into the game. It has the following fields:
-- **Name**: Name of the Asset
-- **Description**: Description of the asset
-- **Icon**: Icon for the asset
-
-These fields are used to populate the asset's Context Info in the game. Context info is the data structure used to fill out the tooltips you see when looking at items.
-
-You can include rich text tags in the name and description to add additional styling. 
-Check [this link](https://docs.unity3d.com/2022.3/Documentation/Manual/UIE-supported-tags.html) to see supported rich text tags for our version of Unity.
-
+# Custom Carryables
 ## Carryable Base Asset
 This is the base component for making carryable assets. Use this component for adding simple carryables. 
 
@@ -60,7 +30,10 @@ We recommend editing the Json in your IDE or a separate Text editor, rather than
 
 You can view a list of all the Void Crew stats and tags via the Stats Window and Tags Window, found under "Void Crew" in the Toolbar.
 
-For more info on Stat Mods, see the Stat Mods Chapter.
+You can find additional documentation about:
+- **[Stat Modifiers](../StatModifiers/StatModifiers.md)**
+- **[Dynamic Modifiers](../StatModifiers/DynamicModifiers.md)**
+- **[Tags](../Tags/Tags.md)**
 
 ## Loot Table Item
 This component is what determines how your asset will naturally appear in the game as loot.
