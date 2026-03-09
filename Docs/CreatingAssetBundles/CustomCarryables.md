@@ -30,6 +30,9 @@ We recommend editing the Json in your IDE or a separate Text editor, rather than
 
 You can view a list of all the Void Crew stats and tags via the Stats Window and Tags Window, found under "Void Crew" in the Toolbar.
 
+[In the sample project](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/StatModExamples) 
+you can find examples of modifiers written in JSON format for most Void Crew Relics, Weapon Mods and Homunculi
+
 You can find additional documentation about:
 - **[Stat Modifiers](../StatModifiers/StatModifiers.md)**
 - **[Dynamic Modifiers](../StatModifiers/DynamicModifiers.md)**
