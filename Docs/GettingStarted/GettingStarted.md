@@ -41,7 +41,7 @@ This template includes useful samples for getting started, and already includes 
 
 ## Other Tools
 ### 3D Assets
-If you plan on including new 3D assets in your Mod, we recommend installing **Blender** on Steam.
+If you plan on including new 3D assets in your Mod, we recommend installing [Blender](https://www.blender.org/).
 Blender will allow you to create custom 3D assets. 
 
 It is also possible you will be using 3D assets made by others found on the internet. 
