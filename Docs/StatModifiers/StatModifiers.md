@@ -16,13 +16,20 @@ There are four types of modifiers that affect how the modifier value is mathemat
 
 In Void Crew, additive modifiers are displayed with `%` while exponential modifiers are displayed with `x`
 
-- **Primary Addend**:
+### **Primary Addend**
+JSON: `"PrimaryAddend"` \
 Flat value that can be positive or negative, which is added to the base value ahead of the other modifiers.
-- **SecondaryAddend**:
+
+### **Secondary Addend**
+JSON: `"SecondaryAddend"` \
 Flat value that can be positive or negative, which is added at the end of all other modifiers
-- **Additive Multiplier**:
+
+### **Additive Multiplier**
+JSON: `"AdditiveMultiplier"` \
 Multiplier that can be positive or negative. A value of 0 has no effect. A value of 1 will increase value by 100%. A value of 0.5 will increase value by 50%. -0.5 will decrease by 50%.
-- **Exponential Multiplier**:
+
+### **Exponential Multiplier**
+JSON: `"ExponentialMultiplier"` \
 Multiplier that is multiplied on top of other exponential multipliers mid calculation. Each Exponential Multiplier modifier multiplies the current exponential multiplier by:
   `(1 + Modifier Amount)`
 
@@ -53,7 +60,7 @@ Result =
 | Stat                      | Description                                                                                                                                                                                                                           | Normal Base Values |
 |:--------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------:|
 | Damage                    | How much damage a weapon will do per shot, before multipliers <br/from damage and armor types are applied. <br/>Note that internal numbers are multiplied by 100 before they are shown in UI.                                         |           1 to 100 |
-| Firerate                  | How many shots per second the weapon can fire per second. For charge-up weapons like the beamcaster, this is instead a multiplier to the charge speed.                                                                                |          0.1 to 30 |
+| Firerate                  | How many shots the weapon can fire per second. For charge-up weapons like the beamcaster, this is instead a multiplier to the charge speed.                                                                                           |          0.1 to 30 |
 | Range                     | The range of the weapon projectile in meters. The weapon projectile is destroyed if it moves past this range.                                                                                                                         |        500 to 2000 |
 | ProjectileSpeed           | How fast the weapon projectile moves per second. Does not affect beam weapons.                                                                                                                                                        |       1000 to 2000 |
 | Accuracy                  | Partly determines how much a projectile can spread (spread is a separate thing). Essentially a value of 1 here means the weapon is using the lowest spread possible, and 0 being the most spread. <br/> Does not affect beam weapons. |     Clamped 0 to 1 |
