@@ -1,6 +1,8 @@
-# Scripted Mods
+# Compiling Mods
 This section covers how to build your own mods with more complex custom functionality using your own code. 
 This section is not needed if you only want to make mods that simply contain new assets (See "Asset Mods" chapter).
+
+For more information on how to inject code into Void Crew, see the guide on [Harmony Patching](../ModScripting/HarmonyPatching.md)
 
 ## Installing Visual Studio
 You will need to install necessary SDKs via Visual Studio in order to compile your mod into a format other players can use.
@@ -38,11 +40,6 @@ the newest assembly code for Void Crew. Depending on the complexity of the mod, 
 - Then in a separate Explorer Window, go to your Void Crew install location. Then navigate to Void Crew_Data > Managed
 - Copy the Assembly-CSharp.dll file. Then paste and override the one in the lib folder
 - You may need to restart Visual Studio or other IDE for the Assembly to update
-
-## Injecting Code into Void Crew - Harmony Patching
-
-This section is still WIP. You can find more details written on the Community Void Crew Modding Discord:
-[![](https://img.shields.io/discord/1180651062550593536.svg?&logo=discord&logoColor=ffffff&style=flat&label=Discord&labelColor=24292f&color=111111)](https://discord.gg/g2u5wpbMGu "Void Crew Modding Discord")
 
 ## Compiling your Mod
 You will need to compile your mod into a .dll file for it to be loaded into the game via a Mod Manager.
