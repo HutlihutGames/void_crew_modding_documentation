@@ -4,6 +4,8 @@ Documentation for how to create mods for Void Crew and how to use:
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common)
 - The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample)
 
+Disclaimer: much of the below documentation is still WIP.
+
 Follow the guides below in order to get started and progress through the full modding workflow.
 
 ## Documentation

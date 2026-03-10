@@ -102,6 +102,8 @@ Because pips modify the base value, they are powerful when combined with modifie
 | MaxHitPoints            | Max hit points for the ship. Also determines starting hit points.                                               |        6000 to 6500 |
 
 ## Movement Stats
+WIP Section
+
 | Stat                          | Description | Typical Base Values |
 |:------------------------------|:------------|--------------------:|
 | ForwardPower                  |             |                     |
@@ -118,6 +120,8 @@ Because pips modify the base value, they are powerful when combined with modifie
 | ThrusterBoosterRechargeSpeed  |             |                     |
 
 ## Power Stats
+WIP Section
+
 | Stat                     | Description | Typical Base Values |
 |:-------------------------|:------------|--------------------:|
 | PowerWanted              |             |                     |
@@ -126,6 +130,8 @@ Because pips modify the base value, they are powerful when combined with modifie
 | BreakerTemperatureShift  |             |                     |
 
 ## Utility Stats
+WIP Section
+
 | Stat                     | Description | Typical Base Values |
 |:-------------------------|:------------|--------------------:|
 | ProcessingSpeed          |             |                     |
