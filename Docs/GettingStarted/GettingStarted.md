@@ -1,5 +1,15 @@
 # Getting started
 
+## Mod Profile
+To avoid messing with your normal Void Crew profile while using or testing mods, you can use a separate Void Crew mod profile.
+
+You can enable the mod profile by adding the following launch option to Void Crew on Steam:
+`-mods-profile`
+
+![ModsProfile](img/modprofile.png)
+
+Automated switching to modded profile to be implemented later.
+
 ## Mod Manager
 First thing its important to know how mods are installed for Void Crew. 
 You will also need a Mod Manager for testing your mods locally for testing.
