@@ -3,7 +3,7 @@
 ## Mod Profile
 To avoid messing with your normal Void Crew profile while using or testing mods, you can use a separate Void Crew mod profile.
 
-You can enable the mod profile by adding the following launch option to Void Crew on Steam:
+You can enable the mod profile by adding the following launch option to Void Crew on Steam: \
 `-mods-profile`
 
 ![ModsProfile](img/modprofile.png)

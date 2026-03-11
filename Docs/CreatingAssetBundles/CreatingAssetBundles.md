@@ -2,7 +2,9 @@
 In your Unity Void Crew Samples Project, you can find various example assets. 
 These are added to the game at runtime by exporting them as **Unity Asset Bundles**.
 
-Each asset bundle will need to be located in its own folder, which must contain all dependencies (textures, meshes, audio, prefabs). 
+Each asset bundle will need to be located in its own folder, which must contain all dependencies (textures, meshes, audio, prefabs).
+What this means is that everything referenced by your assets (textures, materials, etc.) must be in within the folder for that asset bundle. 
+No references to outside that folder will be kept when exported.
 
 You can include multiple assets per asset bundle. Each prefab you want your mod to load at runtime must have the **Void Crew Asset** component at its root.
 
