@@ -38,6 +38,19 @@ These fields are used to populate the asset's Context Info in the game. Context 
 You can include rich text tags in the name and description to add additional styling.
 Check [this link](https://docs.unity3d.com/2022.3/Documentation/Manual/UIE-supported-tags.html) to see supported rich text tags for our version of Unity.
 
+## Never modify examples
+It is **IMPORTANT** that when you make **new** assets that you either:
+- Duplicate another asset and work on the duplicate
+- Make a new asset from scratch, and add the necessary components if it is not a scriptable object.
+
+**Never** make your assets by modifying other examples or templates provided by us or other modders.
+Doing so will mean they have the same ID (GUID) in their metadata, which will cause problems for Void Crew loading
+the assets. 
+
+By duplicating or making the asset from scratch a new ID will be generated automatically, which ensures your assets will
+not conflict with assets created by others. Additionally, by ensuring your assets keep a unique ID you will also be able
+to update the mod with the assets and the game to still know it is the same asset (so for example cosmetics stay equipped).
+
 # Types of Void Crew Asset Bundles
 ## [Custom Carryables](CustomCarryables.md)
 Learn about how to create custom weapon mods and relics.
