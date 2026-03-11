@@ -1,0 +1,190 @@
+:root {
+    --ui-color__bright-grey: rgb(223, 223, 223);
+    --ui-color__light-grey: rgb(105, 106, 109);
+    --ui-color__dark-grey: rgb(48, 48, 48);
+    --ui-color__light-green: rgb(131, 200, 134);
+    --ui-color__light-orange: rgb(246, 197, 118);
+    --ui-color__orange: rgb(246, 174, 60);
+    --ui-color__yellow: rgb(255, 203, 0);
+    --ui-color__light-blue: rgb(189, 231, 251);
+    --ui-color__light-blue-a: rgba(189, 231, 251, 0.8);
+    --ui-color__grey-blue: rgb(48, 48, 68);
+    --ui-color__blue: rgb(39, 126, 193);
+    --ui-color__special: rgb(236, 0, 140);
+    --ui-color__panic-red: rgb(255, 0, 0);
+    --ui-color__white: rgb(255, 255, 255);
+    --ui-color__black: rgb(0, 0, 0);
+    --ui-color__red: rgb(236, 30, 36);
+    --ui-color__reddish-brown: rgb(85, 47, 47);
+    --ui-color__green: rgb(0, 172, 77);
+    --ui-color__rarity-common: rgb(160, 160, 160);
+    --ui-color__rarity-rare: rgb(63, 122, 143);
+    --ui-color__rarity-epic: rgb(103, 42, 123);
+    --ui-color__rarity-legendary: rgb(163, 113, 42);
+    --ui-color__rarity-special: rgb(0, 255, 212);
+    --ui-color__orange-highlight: rgb(180, 117, 18);
+    --ui-color__orange-pressed: rgb(245, 197, 121);
+    --ui-color__item-background: rgb(20, 19, 16);
+    --ui-color__deco-brown: rgb(94, 84, 74);
+    --oxygen: rgb(94, 201, 230);
+}
+
+body {
+    color: var(--ui-color__white);
+}
+
+/* Background */
+.wy-body-for-nav {
+    background: var(--ui-color__dark-grey);
+}
+
+/* Left sidebar background */
+.wy-nav-side {
+    background: var(--ui-color__grey-blue);
+}
+
+/* Sidebar search area / top */
+.wy-side-nav-search,
+.wy-side-nav-search:visited {
+    background: var(--ui-color__dark-grey);
+}
+
+/* Current item highlight */
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.on a {
+    background: var(--ui-color__dark-grey) !important;
+    color: var(--ui-color__light-blue);
+}
+
+.wy-menu-vertical li.current > a:hover,
+.wy-menu-vertical li.on a:hover {
+    color: var(--ui-color__light-orange);
+}
+
+.wy-menu-vertical a {
+    color: var(--ui-color__light-blue);
+}
+
+/* Links */
+a {
+    color: var(--ui-color__light-blue);
+}
+
+a:visited {
+    color: var(--ui-color__light-blue);
+}
+
+a:hover {
+    color: var(--ui-color__light-orange);
+}
+
+/* Main content width/background tweaks if wanted */
+.wy-nav-content {
+    background: var(--ui-color__dark-grey);
+}
+
+/* Text */
+h1, h2, h3, h4, h5 {
+    color: var(--ui-color__white);
+}
+
+p {
+    color: var(--ui-color__white);
+}
+
+/* List bullets */
+ul li::marker {
+    color: var(--ui-color__bright-grey);
+}
+
+/* Ordered list numbers */
+ol li::marker {
+    color: var(--ui-color__bright-grey);
+}
+
+/* Code block background */
+.highlight {
+    background: var(--ui-color__dark-grey);
+    border-radius: 6px;
+}
+
+/* Code block container */
+.highlight pre {
+    background: var(--ui-color__dark-grey);
+    color: var(--ui-color__bright-grey);
+}
+
+.highlight .na {
+    color: var(--ui-color__yellow);
+}
+
+.highlight .nc {
+    color: var(--ui-color__blue);
+}
+
+.highlight .k {
+    color: var(--ui-color__green);
+}
+
+.highlight .nf {
+    color: var(--ui-color__blue);
+}
+
+.highlight .kt {
+    color: var(--ui-color__green);
+}
+
+/* Inline code */
+code {
+    background: var(--ui-color__dark-grey);
+    color: var(--ui-color__bright-grey);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+/* Prevent RTD theme from overriding */
+.rst-content pre,
+.rst-content code {
+    background: var(--ui-color__dark-grey);
+}
+.rst-content code.literal {
+    color: var(--ui-color__yellow);
+}
+
+/* Buttons */
+.btn-neutral {
+    background-color: var(--ui-color__dark-grey) !important;
+    border-color: var(--ui-color__bright-grey) !important;
+    color: var(--ui-color__bright-grey) !important;
+}
+.btn-neutral:visited {
+    background-color: var(--ui-color__dark-grey) !important;
+    border-color: var(--ui-color__bright-grey) !important;
+    color: var(--ui-color__bright-grey) !important;
+}
+.btn-neutral:hover {
+    background-color: var(--ui-color__dark-grey) !important;
+    border-color: var(--ui-color__light-orange) !important;
+    color: var(--ui-color__white) !important;
+}
+
+.wy-menu-vertical li button.toctree-expand {
+    color: var(--ui-color__bright-grey);
+}
+
+.wy-menu-vertical li button.toctree-expand:hover {
+    color: var(--ui-color__light-orange);
+}
+
+.wy-menu-vertical li.current>a button.toctree-expand {
+    color: var(--ui-color__white);
+}
+
+.wy-menu-vertical li.current>a button.toctree-expand:hover {
+    color: var(--ui-color__light-orange);
+}
+
+/* Tables */
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
+    background-color: var(--ui-color__light-grey);
+}
