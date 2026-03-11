@@ -2,9 +2,13 @@
 ## Carryable Base Asset
 This is the base component for making carryable assets. Use this component for adding simple carryables. 
 
+![CarryableBaseAsset](img/CarryableBaseAsset.png)
+
 **Override Collider** (Optional): 
 The base physics collider around your carryable. 
 This must be one of the following: Box Collider, Sphere Collider, Capsule Collider, or Mesh Collider. If left empty, Void Crew will use a default collider.
+
+_For optimal performance, we recommend avoiding the use of a Mesh Collider unless necessary._ 
 
 **Override Renderer** (Optional): 
 The base renderer for your carryable. If left empty, the carryable will use a default renderer.
@@ -18,6 +22,8 @@ If you want audio clip used for the carryable's impact sound, then you can add o
 Add this component if you want to create a relic or a weapon mod (not to be confused with a mod that adds a weapon module mod).
 This is an extension of the Carryable Base Asset, so your object should only have one of the two.
 
+![CarryableStatModAsset](img/CarryableStatModAsset.png)
+
 **Is Relic**: 
 Enable if the asset is to be used as a relic. 
 Relics will apply their stat modifiers across the whole ship by default. 
@@ -26,20 +32,25 @@ If false, then stat mod asset will be a weapon mod, and only able to apply its m
 **Stat Mods Description**: 
 This field is for the stat modifiers to be applied by your stat mod asset.
 This is formatted in Json. You can see examples in the Sample Project for how the Json is formatted.
-We recommend editing the Json in your IDE or a separate Text editor, rather than within the Unity Inspector. Then copy pasting the Json into the field.
+
+**We recommend editing the Json in your IDE or a separate Text editor**, rather than within the Unity Inspector. You can copy paste the Json into the field.
 
 You can view a list of all the Void Crew stats and tags via the Stats Window and Tags Window, found under "Void Crew" in the Toolbar.
+
+![ExportSelected](img/Unity_VoidCrewToolbar.png)
 
 [In the sample project](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/StatModExamples) 
 you can find examples of modifiers written in JSON format for most Void Crew Relics, Weapon Mods and Homunculi
 
-You can find additional documentation about:
+Read more about:
 - **[Stat Modifiers](../StatModifiers/StatModifiers.md)**
 - **[Dynamic Modifiers](../StatModifiers/DynamicModifiers.md)**
 - **[Tags](../Tags/Tags.md)**
 
 ## Loot Table Item
 This component is what determines how your asset will naturally appear in the game as loot.
+
+![LootTableItem](img/LootTableItem.png)
 
 ### Sector Completion Reward:
 This adds the item as a sector completion reward (supply drop from completing a sector's main objective).

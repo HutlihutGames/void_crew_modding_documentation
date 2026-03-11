@@ -12,8 +12,13 @@ We recommend using Visual Studio 2022 or later. You can get the newest free vers
 Once installed, you will need to ensure you have the Microsoft.Net.Sdk installed.
 - On Windows, search for and open Visual Studio Installer
 - Select _Modify_ on your version of Visual Studio
+
+![VisualStudioModify](img/visualstudio_modify.png)
+
 - Go to _Individual Components_
 - Find and tick .NET SDK and install.
+
+![VisualStudioSDK](img/visualstudio_modify.png)
 
 ## Setting up the Mod Template Solution
 You'll need to setup the mod solution, which itself can be compiled into a mod.
@@ -24,7 +29,13 @@ This is separate from your Unity Project where you setup the assets, and you'll 
   - (Replace `<version>` with your version of Visual Studio. For example: \Visual Studio 2022\)
   - Copy the VCM Template folder to the directory
 - Open Visual Studio and choose "Create a new project"
+
+![VisualStudioNewProject](img/visualstudio_newproject.png)
+
 - Select the VCM Template
+
+![VisualStudioNewProject](img/visualstudio_vcm.png)
+
 - Enter a name for the project (such as the name for your mod) and location
   - We recommend having a Git repository for your mod project solutions. You can either create a new one or reusing an existing one.
 

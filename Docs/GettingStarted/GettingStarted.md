@@ -36,13 +36,13 @@ Our recommended Git client is [Fork](https://git-fork.com/) (free), but you can 
 Next, you will want to setup a clone of the Void Crew Samples Project. 
 This template includes useful samples for getting started, and already includes the [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common).
 
-1. Use your chosen Git client to clone the [void_crew_mods_sample](https://github.com/HutlihutGames/void_crew_mods_sample) repo
+1. Use your chosen Git client to clone the [void_crew_mods_sample](https://github.com/HutlihutGames/void_crew_mods_sample) repository. _If you are not using a Git client, you can clone it directly from Github._
 2. In Unity Hub, press "Add" and select the folder containing the Void Crew Samples Project
 
 ## Other Tools
 ### 3D Assets
 If you plan on including new 3D assets in your Mod, we recommend installing [Blender](https://www.blender.org/).
-Blender will allow you to create custom 3D assets. 
+Blender will allow you to create custom 3D assets for free. 
 
 It is also possible you will be using 3D assets made by others found on the internet. 
 In that case Blender will also be a useful tool for modifying those assets, or converting them to FBX format for use in Unity. 

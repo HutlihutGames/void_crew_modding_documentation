@@ -10,6 +10,8 @@ To export your asset:
 1. Select the folder containing the asset and its dependencies (such as "mod_banana")
 2. In the toolbar at the top of Unity, select "Void Crew" and in the dropdown press Export Selected
 
+![ExportSelected](img/Unity_ExportSelected.png)
+
 You will find your exported asset at the root of your Unity Project folder, in a folder named "Exported Assets". 
 The asset bundle includes two files named after the folder you used to export the asset, one with a ".manifest" filetype. 
 Both of these files will be needed.
@@ -25,11 +27,13 @@ we have included reference FBX files that you can use in for example Blender and
 This is the base component needed for the asset to be loaded into the game. It has the following fields:
 - **Name**: Name of the Asset
 - **Description**: Description of the asset
-- **Icon**: Icon for the asset
+- **Icon**: Icon for the asset. The icon's `Texture Type` should be set to `Sprite (2D and UI)`.
+
+![VoidCrewAsset](img/VoidCrewAsset.png)
+These fields are used to populate the asset's Context Info in the game. Context info is the data structure used to fill out the tooltips you see when looking at items or hovering over them in UI.
 
 **Note for Cosmetics**: Cosmetics use scriptable objects instead of prefabs for the assets. So the above fields are found on the cosmetic objects themselves instead of the Void Crew Asset component.
-
-These fields are used to populate the asset's Context Info in the game. Context info is the data structure used to fill out the tooltips you see when looking at items or hovering over them in UI.
+![ColorScheme](img/ColorScheme.png)
 
 You can include rich text tags in the name and description to add additional styling.
 Check [this link](https://docs.unity3d.com/2022.3/Documentation/Manual/UIE-supported-tags.html) to see supported rich text tags for our version of Unity.

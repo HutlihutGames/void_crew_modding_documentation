@@ -25,3 +25,14 @@ Description must be less than 250 characters.
 ### Readme.md
 This file is used to display information about your mod on the Thunder Store page. 
 Update the file with information regarding your mod.
+
+# Updating Void Crew Common
+Eventually you might need to update the Void Crew Common package in Unity. 
+
+To do this, open the package manager in Unity.
+
+![UnityPackageManager](img/Unity_PackageManager.png)
+
+In the package manager, find the `void_crew_common` package, and press "Update".
+
+![UnityPackageManager](img/Unity_VCCPackage.png)
