@@ -88,20 +88,20 @@ Beware that many pip stats are legacy and might no longer be used. Additional sc
 
 | Stat                    | Description                                                                                                     | Typical Base Values |
 |:------------------------|:----------------------------------------------------------------------------------------------------------------|--------------------:|
-| ShieldMaxHitPoints      | How much damage the ship can take before it is disabled.                                                        |                     |
-| ShieldRechargeSpeed     | How fast the shield recharges                                                                                   |                     |
-| ShieldRechargeDelay     | Delay in seconds before the shield starts recharging after taking damage.                                       |                     |
-| ShieldAbsorption        | Fraction of the incoming damage the shield absorbs. Remaining damage is applied to the ship.                    |                     |
+| ShieldMaxHitPoints      | How much damage the ship can take before it is disabled.                                                        |          150 to 450 |
+| ShieldRechargeSpeed     | How fast the shield recharges                                                                                   |            10 to 15 |
+| ShieldRechargeDelay     | Delay in seconds before the shield starts recharging after taking damage.                                       |                   5 |
+| ShieldAbsorption        | Fraction of the incoming damage the shield absorbs. Remaining damage is applied to the ship.                    |                 0.9 |
 | ShieldGenerationEnabled | Used to automatically generate on enemies when they spawn, and reboot the shield.                               |              0 or 1 |
 | Invulnerability         | Whether the shield is invulnerable.                                                                             |              0 or 1 |
 | KineticVulnerability    | Multiplier to damage taken from the corresponding damage type. Most enemy projectiles are Kinetic               |                   1 |
-| ElectricVulnerability   | Multiplier to damage taken from the corresponding damage type. Not used.                                        |                     |
-| EnergyVulnerability     | Multiplier to damage taken from the corresponding damage type. Prism, Sniper and guided projectiles are Energy. |                     |
-| FireVulnerability       | Multiplier to damage taken from the corresponding damage type. Fire Morph and Fire Boss attacks do Fire damage  |                     |
-| FreezingVulnerability   | Multiplier to damage taken from the corresponding damage type. Ice Crystals do Freezing damage.                 |                     |
-| PhysicalVulnerability   | Multiplier to damage taken from the corresponding damage type. Not used.                                        |                     |
-| RadiationVulnerability  | Multiplier to damage taken from the corresponding damage type. Not used.                                        |                     |
-| VoidVulnerability       | Multiplier to damage taken from the corresponding damage type. The Void Harbinger does Void damage.             |                     |
+| ElectricVulnerability   | Multiplier to damage taken from the corresponding damage type. Not used.                                        |                   1 |
+| EnergyVulnerability     | Multiplier to damage taken from the corresponding damage type. Prism, Sniper and guided projectiles are Energy. |                   1 |
+| FireVulnerability       | Multiplier to damage taken from the corresponding damage type. Fire Morph and Fire Boss attacks do Fire damage  |                   1 |
+| FreezingVulnerability   | Multiplier to damage taken from the corresponding damage type. Ice Crystals do Freezing damage.                 |                   1 |
+| PhysicalVulnerability   | Multiplier to damage taken from the corresponding damage type. Not used.                                        |                   1 |
+| RadiationVulnerability  | Multiplier to damage taken from the corresponding damage type. Not used.                                        |                   1 |
+| VoidVulnerability       | Multiplier to damage taken from the corresponding damage type. The Void Harbinger does Void damage.             |                   1 |
 | MaxHitPoints            | Max hit points for the ship. Also determines starting hit points.                                               |        6000 to 6500 |
 | TargetLockDamage        | Damage multiplier applied to target locked enemies.                                                             |                   1 |
 | TargetLockCount         | How many target locks can be held at a time.                                                                    |                   4 |
@@ -133,7 +133,7 @@ Note: ForwardPowerPip, YawTorquePip, ElevationPowerPip, StrafePowerPip, PilotAid
 | Stat                     | Description                                                                                                                                                                  | Typical Base Values |
 |:-------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------:|
 | PowerWanted              | How many power units is used by the module when active.                                                                                                                      |              1 to 6 |
-| PowerProvided            | How much power is produced by a power provider (Central Computer and Power Generators).                                                                                      |                     |
+| PowerProvided            | How much power is produced by a power provider (Central Computer and Power Generators).                                                                                      |              1 to 3 |
 | BatteryRechargeAmount    | How much battery charge is generated per second. Battery sockets apply a modifier from this stat's value to the same stat on the battery (value is 0 on battery by default). |             2 to 20 |
 | BreakerTemperatureShift  | How much breaker temperature will change per second for each power unit the ship is overloaded by. Breaker chance to trigger is determined by its temperature.               |           -0.5 to 1 |
 
