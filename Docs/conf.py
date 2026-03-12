@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Void Crew Modding Documentation'
-copyright = '2026, Hutlihut Games'
+copyright = '%Y, Hutlihut Games - Void Crew Modding Documentation License'
 author = 'Hutlihut Games'
 release = '0.1.0'
 
