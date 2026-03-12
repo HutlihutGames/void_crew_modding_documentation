@@ -25,7 +25,7 @@ This can be useful if you want to change the direction or the size of patterns.
 In the sample project you can find the following files to help you out:
 
 **[Ectype_Base.fbx](https://github.com/HutlihutGames/void_crew_mods_sample/blob/master/Assets/Mods/Cosmetics/Ectype_Base.fbx)**: 
-A basic ectype mannequin to help with skinning. Blend file is also available [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/CosmeticsHelpers).
+A basic ectype mannequin to help with skinning. Blend file is also available [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Blend).
 
 **[ProjectionTest.png](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/CosmeticsHelpers)**: 
 A test projection with a color grid.
