@@ -15,8 +15,8 @@ To export your asset:
 ![ExportSelected](img/Unity_ExportSelected.png)
 
 You will find your exported asset at the root of your Unity Project folder, in a folder named "Exported Assets". 
-The asset bundle includes two files named after the folder you used to export the asset, one with a ".manifest" filetype. 
-Both of these files will be needed.
+There will be two files named after the folder you used to export the asset, one with a ".manifest" filetype. 
+Only the one _without_ the ".manifest" filetype is needed.
 
 _Note: if you do not see the ".manifest", [you need to enable file extensions in Windows explorer](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01#id0ebf=windows_11)._
 

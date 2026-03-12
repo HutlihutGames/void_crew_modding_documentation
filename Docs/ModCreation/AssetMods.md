@@ -6,7 +6,7 @@ In the samples project find the folder "Mod Releases" at the root of the Project
 Copy the folder "Void Crew Banana Mod Sample-0.1.0". Give the new folder a name for your Mod.
 
 Copy your exported asset bundles to the "AssetBundles" folder within the mod folder.
-Make sure to include both the file with and without the ".manifest" filetype.
+You do not need to include the files that have the ".manifest" file extension.
 
 Update the meta data files in the folder with information regarding your mod. You will need to update manifest.json, README.md and icon.png.
 
