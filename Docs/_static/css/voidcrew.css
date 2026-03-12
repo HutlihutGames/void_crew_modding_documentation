@@ -78,9 +78,10 @@ a:hover {
     color: var(--ui-color__light-orange);
 }
 
-/* Main content width/background tweaks if wanted */
+/* Main content */
 .wy-nav-content {
     background: var(--ui-color__dark-grey);
+    max-width: 1200px;
 }
 
 /* Text */
@@ -187,4 +188,9 @@ code {
 /* Tables */
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
     background-color: var(--ui-color__light-grey);
+}
+
+.rst-content table td p {
+    text-wrap: auto;
+    max-width: 100%;
 }
