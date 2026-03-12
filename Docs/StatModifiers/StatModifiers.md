@@ -59,13 +59,13 @@ Result =
 ## Weapon Stats
 | Stat                      | Description                                                                                                                                                                                                                           | Normal Base Values |
 |:--------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------:|
-| Damage                    | How much damage a weapon will do per shot, before multipliers <br/from damage and armor types are applied. <br/>Note that internal numbers are multiplied by 100 before they are shown in UI.                                         |           1 to 100 |
+| Damage                    | How much damage a weapon will do per shot, before multipliers from damage and armor types are applied.<br/> Note that internal numbers are multiplied by 100 before they are shown in UI.                                             |           1 to 100 |
 | Firerate                  | How many shots the weapon can fire per second. For charge-up weapons like the beamcaster, this is instead a multiplier to the charge speed.                                                                                           |          0.1 to 30 |
 | Range                     | The range of the weapon projectile in meters. The weapon projectile is destroyed if it moves past this range.                                                                                                                         |        500 to 2000 |
 | ProjectileSpeed           | How fast the weapon projectile moves per second. Does not affect beam weapons.                                                                                                                                                        |       1000 to 2000 |
 | Accuracy                  | Partly determines how much a projectile can spread (spread is a separate thing). Essentially a value of 1 here means the weapon is using the lowest spread possible, and 0 being the most spread. <br/> Does not affect beam weapons. |     Clamped 0 to 1 |
-| RotationSpeed             |                                                                                                                                                                                                                                       |                    |
-| DamageSecondary           |                                                                                                                                                                                                                                       |                    |
+| RotationSpeed             | Determines how fast weapons can rotate. Can be be used to modify how fast a weapon is able to rotate while shooting, although this functionality is not actively used.                                                                |               1000 |
+| DamageSecondary           | Used internally by editor tools, not used at runtime.                                                                                                                                                                                 |                    |
 | MaxZoom                   | Affects much you zoom in on the weapon when holding right click by modifying your field of view.                                                                                                                                      |           1.2 to 2 |
 | ReloadTime                | How long it takes to reload the weapon without active reload. Only affects weapons using light or heavy caliber magazines.                                                                                                            |            1 to 12 |
 | MagazineReservoirTick     | How long it takes between each tick for the magazine to reservoir to refill. The amount refilled per tick depends on the weapon.                                                                                                      |          1.25 to 2 |
@@ -82,7 +82,10 @@ For each pip added, the base stat linearly moves from a minimum to a maximum bas
 Pip stats on weapons have 3 pips, which is what is increased by the Damage MKI, Firerate MKI weapon mods for example.
 Because pips modify the base value, they are powerful when combined with modifiers to the non-pip equivalent of the stat.
 
+Beware that many pip stats are legacy and might no longer be used. Additional scripting may be needed to re-apply the functionality of certain pip stats.
+
 ## Player Ship Stats
+
 | Stat                    | Description                                                                                                     | Typical Base Values |
 |:------------------------|:----------------------------------------------------------------------------------------------------------------|--------------------:|
 | ShieldMaxHitPoints      | How much damage the ship can take before it is disabled.                                                        |                     |
@@ -100,45 +103,49 @@ Because pips modify the base value, they are powerful when combined with modifie
 | RadiationVulnerability  | Multiplier to damage taken from the corresponding damage type. Not used.                                        |                     |
 | VoidVulnerability       | Multiplier to damage taken from the corresponding damage type. The Void Harbinger does Void damage.             |                     |
 | MaxHitPoints            | Max hit points for the ship. Also determines starting hit points.                                               |        6000 to 6500 |
+| TargetLockDamage        | Damage multiplier applied to target locked enemies.                                                             |                   1 |
+| TargetLockCount         | How many target locks can be held at a time.                                                                    |                   4 |
+| ScanRange               | Maximum range the ship scanner can reach.                                                                       |                3000 |
+| ScanSpeedIncreased      | Seconds to decrease the default scan time with.                                                                 |                   0 |
+
 
 ## Movement Stats
-WIP Section
 
-| Stat                          | Description | Typical Base Values |
-|:------------------------------|:------------|--------------------:|
-| ForwardPower                  |             |                     |
-| YawTorque                     |             |                     |
-| StrafePower                   |             |                     |
-| EnginePower                   |             |                     |
-| PilotAidLevel                 |             |                     |
-| JumpChargeSpeed               |             |                     |
-| VoidJumpCapable               |             |                     |
-| SignatureVelocity             |             |                     |
-| SignatureAngularVelocity      |             |                     |
-| ThrusterBoosterDuration       |             |                     |
-| ThrusterBoosterCooldown       |             |                     |
-| ThrusterBoosterRechargeSpeed  |             |                     |
+| Stat                         | Description                                                                                                                                            | Typical Base Values |
+|:-----------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------:|
+| ForwardPower                 | Scales how strongly the ship moves forward and backwards.                                                                                              |                   1 |
+| YawTorque                    | Scales the ship's movement torque along its Y rotation.                                                                                                |                   1 |
+| StrafePower                  | Scales how strongly the ship moves sideways.                                                                                                           |                   1 |
+| ElevationPower               | Scales how strongly the ship moves up and down.                                                                                                        |                   1 |
+| EnginePower                  | Scales all the above movement stats.                                                                                                                   |          0.5 to 1.7 |
+| EnginePowerPip               | Pip stat for the engine power, which scales all the above movement stats by 3% per pip. This is the stat affected by engine trims. Starts at max pips. |          0.5 to 1.7 |
+| PilotAidLevel                | Scales engine thrust input while cruise mode is enabled.                                                                                               |                 0.1 |
+| JumpChargeSpeed              | Affects how fast the void drive is charged. Charge percent goes up by this value multiplied by 1.5 each second.                                        |       0.01 to 0.015 |
+| VoidJumpCapable              | Determines if the ship can void jump. Hollow interdiction units add a -1 modifier to this stat. If the stat is 0 or less, the ship cannot void jump.   |                   1 |
+| ThrusterBoosterDuration      | How many seconds the thruster boost should stay active.                                                                                                |                   9 |
+| ThrusterBoosterCooldown      | How many seconds the thruster booster needs to cool down before they can be recharged.                                                                 |                   6 |
+| ThrusterBoosterRechargeSpeed | Scales how much the thruster boosters recharge per second. Total charge time is by default 15 seconds.                                                 |                   1 |
+
+Note: ForwardPowerPip, YawTorquePip, ElevationPowerPip, StrafePowerPip, PilotAidLevelPip, SignatureVelocity, and SignatureAngularVelocity are legacy stats which are no longer used.
 
 ## Power Stats
-WIP Section
 
-| Stat                     | Description | Typical Base Values |
-|:-------------------------|:------------|--------------------:|
-| PowerWanted              |             |                     |
-| PowerProvided            |             |                     |
-| BatteryRechargeAmount    |             |                     |
-| BreakerTemperatureShift  |             |                     |
+| Stat                     | Description                                                                                                                                                                  | Typical Base Values |
+|:-------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------:|
+| PowerWanted              | How many power units is used by the module when active.                                                                                                                      |              1 to 6 |
+| PowerProvided            | How much power is produced by a power provider (Central Computer and Power Generators).                                                                                      |                     |
+| BatteryRechargeAmount    | How much battery charge is generated per second. Battery sockets apply a modifier from this stat's value to the same stat on the battery (value is 0 on battery by default). |             2 to 20 |
+| BreakerTemperatureShift  | How much breaker temperature will change per second for each power unit the ship is overloaded by. Breaker chance to trigger is determined by its temperature.               |           -0.5 to 1 |
 
 ## Utility Stats
-WIP Section
 
-| Stat                     | Description | Typical Base Values |
-|:-------------------------|:------------|--------------------:|
-| ProcessingSpeed          |             |                     |
-| HealingSpeed             |             |                     |
-| ActionCooldown           |             |                     |
-| EffectRadius             |             |                     |
-| AttractorMaxRange        |             |                     |
-| AttractorPullVelocity    |             |                     |
-| LifeSupportEffectivity   |             |                     |
-| PassiveTemperatureShift  |             |                     |
+| Stat                     | Description                                                                                                                  | Typical Base Values |
+|:-------------------------|:-----------------------------------------------------------------------------------------------------------------------------|--------------------:|
+| ProcessingSpeed          | Scales fabricator speed and auto mechanic action cooldown time. Also used by download stations to determine download speed.  |                   1 |
+| HealingSpeed             | How much Sarcograph will heal the occupant per second.                                                                       |                 0.2 |
+| ActionCooldown           | Intended for interactive modules that should have an action cooldown. Currently unused, but may be used for future modules.  |                     |
+| EffectRadius             | Intended for interactive modules that should have an AOE effect. Currently unused, but may be used for future modules later. |                     |
+| AttractorMaxRange        | Maximum range of the Gravity Scoop.                                                                                          |                 200 |
+| AttractorPullVelocity    | How many meters items are pulled towards the gravity scoop per second.                                                       |                  10 |
+| LifeSupportEffectivity   | Multiplier used to scale the effectivity of life support modules.                                                            |                   1 |
+| PassiveTemperatureShift  | How much the ship passively changes the temperature of interior room atmospheres.                                            |                   0 |
