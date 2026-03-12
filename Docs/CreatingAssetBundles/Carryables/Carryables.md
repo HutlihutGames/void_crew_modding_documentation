@@ -102,3 +102,22 @@ Determines which drop table the item should be added to.
 - **Container Tech**: Drops from tech containers floating in space.
 - **Desecration**: Loot found in Desecration shrines
 
+## Craftable Item
+Use this component to define how the item should be handled by the fabricator.
+
+![CraftableData](img/CraftableData.png)
+
+**Cost**:
+How much it costs to fabricate the item.
+
+**Recycle Value**:
+How many alloys are returned when the item is recycled.
+
+**Required Fabricator Level**:
+How many fabricator upgrades are required to automatically have access to the blueprint.
+
+**Available Game Modes**:
+Defines which game modes the fabricator should have automatic access to the blueprint. 
+
+**Can Be Recycled**:
+Whether it is possible to recycle the item in the fabricator.
