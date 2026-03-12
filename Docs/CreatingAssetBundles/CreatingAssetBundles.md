@@ -1,4 +1,5 @@
 # Asset Bundle Creation
+
 In your Unity Void Crew Samples Project, you can find various example assets. 
 These are added to the game at runtime by exporting them as **Unity Asset Bundles**.
 
@@ -53,9 +54,20 @@ By duplicating or making the asset from scratch a new ID will be generated autom
 not conflict with assets created by others. Additionally, by ensuring your assets keep a unique ID you will also be able
 to update the mod with the assets and the game to still know it is the same asset (so for example cosmetics stay equipped).
 
-# Types of Void Crew Asset Bundles
-## [Custom Carryables](CustomCarryables.md)
+## Types of Void Crew Asset Bundles
+
+```{toctree}
+:hidden:
+:maxdepth: -1
+
+Carryables/Carryables
+Cosmetics/Cosmetics
+```
+
+You can read more about how to create different types of asset bundles in the below chapters.
+
+**[Carryables](Carryables/Carryables.md)**
 Learn about how to create custom weapon mods and relics.
 
-## [Custom Cosmetics](CustomCosmetics.md)
+**[Cosmetics](Cosmetics/Cosmetics.md)**
 Learn about how to create custom cosmetics.

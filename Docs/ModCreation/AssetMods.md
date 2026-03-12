@@ -15,14 +15,14 @@ When done, make a .zip file from the mod folder. To do this do the following:
 - Right click the .dll file
 - In the menu go to "Send To" and select "Compressed (zipped) folder"
 
-### Manifest.json
+## Manifest.json
 The file manifest.json contains data used by mod loaders, to display your mod.
 
 For now you only need to update name, and description. Update version number as you update the mod. 
 
 Description must be less than 250 characters.
 
-### Readme.md
+## Readme.md
 This file is used to display information about your mod on the Thunder Store page. 
 Update the file with information regarding your mod.
 

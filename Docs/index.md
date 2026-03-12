@@ -6,8 +6,6 @@
 
 GettingStarted/GettingStarted
 CreatingAssetBundles/CreatingAssetBundles
-CreatingAssetBundles/CustomCarryables
-CreatingAssetBundles/CustomCosmetics
 ModCreation/AssetMods
 ModCreation/CompilingMods
 ModCreation/TestingModsLocally
@@ -32,7 +30,9 @@ Follow the guides below in order to get started and progress through the full mo
    Introduction and initial setup required before creating mods.
 
 2. **[Creating Asset Bundles](CreatingAssetBundles/CreatingAssetBundles.md)**  
-   Learn how to create asset bundles for Void Crew, such as weapon mods, relics and cosmetics.
+   Learn how to create asset bundles for Void Crew, including:
+   - [Carryable Weapon Mods and Relics](CreatingAssetBundles/Carryables/Carryables.md)
+   - [Custom Cosmetics](CreatingAssetBundles/Cosmetics/Cosmetics.md)
 
 3. **[Asset Mods](ModCreation/AssetMods.md)**  
    Introduction on how to make mods without custom code, using only asset bundles.

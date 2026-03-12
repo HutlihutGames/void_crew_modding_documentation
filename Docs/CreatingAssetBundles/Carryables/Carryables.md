@@ -1,4 +1,4 @@
-# Custom Carryables
+# Carryables
 ## Carryable Base Asset
 This is the base component for making carryable assets. Use this component for adding simple carryables. 
 
@@ -43,9 +43,9 @@ You can view a list of all the Void Crew stats and tags via the Stats Window and
 you can find examples of modifiers written in JSON format for most Void Crew Relics, Weapon Mods and Homunculi
 
 Read more about:
-- **[Stat Modifiers](../StatModifiers/StatModifiers.md)**
-- **[Dynamic Modifiers](../StatModifiers/DynamicModifiers.md)**
-- **[Tags](../Tags/Tags.md)**
+- **[Stat Modifiers](../../StatModifiers/StatModifiers.md)**
+- **[Dynamic Modifiers](../../StatModifiers/DynamicModifiers.md)**
+- **[Tags](../../Tags/Tags.md)**
 
 ## Loot Table Item
 This component is what determines how your asset will naturally appear in the game as loot.

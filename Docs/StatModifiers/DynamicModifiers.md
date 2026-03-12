@@ -114,7 +114,7 @@ Dynamic values will scale a modifier based on another external value.
 Each dynamic values must be wrapped inside of a `"dynamic_value"` token, which must include
 a `"type"` token to specify which type of value it is.
 
-#### **Shared Properties**
+### **Shared Properties**
 The following properties can be specified on all dynamic scaling values.
 
 `"base_value"` \
