@@ -9,7 +9,7 @@ Then select `ColorScheme` or `ProjectionColor`.
 This will create a new cosmetic scriptable object for the chosen type.
 
 ## Armor Color Scheme
-Contains three colors fields which get applied to specific parts of armor pieces.
+Contains three color fields which get applied to specific parts of armor pieces.
 
 ![ColorScheme](img/ColorScheme.png)
 

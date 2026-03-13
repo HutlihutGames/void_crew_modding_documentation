@@ -1,4 +1,10 @@
 # Armor Pieces
+In the sample project you can find the following files to help you get started on making custom armor pieces:
+
+**Ectype Base Rig:** **[Ectype_Base.fbx](https://github.com/HutlihutGames/void_crew_mods_sample/blob/master/Assets/Mods/Cosmetics/Ectype_Base.fbx)**
+This is a basic Ectype mannequin to help with skinning, or to use as a base for making new armor pieces. 
+Blend file is also available [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Blend).
+
 There are 4 types of cosmetic armor pieces ectypes can wear:
 - <code style="color : red">Helmet</code>
 - <code style="color : lightblue">Chestpiece</code>
@@ -21,11 +27,6 @@ See further down for details on how to do that.
 Furthermore, a secondary UV map can be used to control how patterns are displayed on all cosmetic items. 
 If there is no secondary UV map set up, the first one is used instead. 
 This can be useful if you want to change the direction or the size of patterns.
-
-In the sample project you can find the following files to help you out:
-
-**[Ectype_Base.fbx](https://github.com/HutlihutGames/void_crew_mods_sample/blob/master/Assets/Mods/Cosmetics/Ectype_Base.fbx)**: 
-A basic ectype mannequin to help with skinning. Blend file is also available [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Blend).
 
 **[ProjectionTest.png](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/CosmeticsHelpers)**: 
 A test projection with a color grid.

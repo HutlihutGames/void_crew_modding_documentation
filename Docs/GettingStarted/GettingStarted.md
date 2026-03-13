@@ -27,10 +27,39 @@ We recommend using the same version as Void Crew, which currently uses **Unity E
 2. While you have Unity Hub open, use [this link](https://unity.com/releases/editor/whats-new/2022.3.62f2) to install the editor. You do not need to tick any of the optional modules for the install.
 
 ## Installing Git
-We highly recommend using a Git client. This will allow you to roll-back to previous versions and easily manage changes you make.
-This will also allow you to easily clone the [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common) and Void Crew Samples Project, as well as update them as we add more official tools.
+We highly recommend using Git while developing mods. If you already use Git, you can skip this chapter.
 
-Our recommended Git client is [Fork](https://git-fork.com/) (free), but you can use any you are comfortable with.
+Git is a version control system. It keeps track of changes you make to files, allowing you to:
+- Roll back to a previous working version if something breaks
+- See exactly what changed in your code
+- Experiment safely without losing your work
+
+For example, if you try a new feature and it causes your mod to stop working, Git lets you restore your project to an earlier state in seconds.
+
+Git also makes it easy to download and update external resources such as:
+- The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common)
+- The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample)
+
+**Do I need GitHub?**
+No. Github works entirely on your computer. You do not need to upload your project anywhere, unless you want to:
+- Collaborate with others
+- Share your source code
+- Publish your project as open source
+For many, Git will simply act as a **local backup and version history system**.
+
+**Git Client**
+Our recommended free Git client is [Fork](https://git-fork.com/). Installing Fork will also install Git on your system for you.
+
+Many coding IDEs also have Git built-in, and that can also work well for simple solo projects. 
+If you're already comfortable using Git from within your editor, you can of course continue  
+
+Our recommendation to using a separate client is because they can give you a better overview of changes and provide
+more functionality. Fork is good for both newcomers and advanced users as it has a very clean UI and is simple to use.
+
+Other Git Client options:
+- GitHub Desktop
+- Sourcetree
+- GitKraken
 
 ## Setting up the Void Crew Samples Project
 Next, you will want to setup a clone of the Void Crew Samples Project. 

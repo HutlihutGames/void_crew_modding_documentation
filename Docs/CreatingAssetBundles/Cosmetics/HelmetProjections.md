@@ -21,5 +21,4 @@ So anything non-white gets mixed and might end up looking different than expecte
 
 ![ProjectionColorIngame](img/ProjectionColorIngame.png)
 
-**Important**: By default projections get clamped, so make sure to keep the edges black/transparent, at least 5 pixels wide for safety on each side.
-Otherwise the projection might repeat from the opposite side.
+**Important**: By default projections get clamped (meaning the edges will get stretched out), so make sure to keep the edges black/transparent, at least 5 pixels wide for safety on each side.

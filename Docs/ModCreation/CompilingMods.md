@@ -7,6 +7,9 @@ For more information on how to inject code into Void Crew, see the guide on [Har
 ## Installing Visual Studio
 You will need to install necessary SDKs via Visual Studio in order to compile your mod into a format other players can use.
 
+You don't necessarily have to write your code in Visual Studio. You can use any preferred IDE for that. 
+But Visual Studio is recommending for setting up the template, and supports building the mod .dll in case your chosen IDE doesn't.
+
 We recommend using Visual Studio 2022 or later. You can get the newest free version of Visual Studio Community from [here](https://visualstudio.microsoft.com/downloads/).
 
 Once installed, you will need to ensure you have the Microsoft.Net.Sdk installed.
@@ -18,28 +21,41 @@ Once installed, you will need to ensure you have the Microsoft.Net.Sdk installed
 - Go to _Individual Components_
 - Find and tick .NET SDK and install.
 
-![VisualStudioSDK](img/visualstudio_modify.png)
+![VisualStudioSDK](img/visualstudio_sdk.png)
 
 ## Setting up the Mod Template Solution
 You'll need to setup the mod solution, which itself can be compiled into a mod.
 This is separate from your Unity Project where you setup the assets, and you'll need a separate mod solution for each mod.
 
 - Get the newest VCM Template. A copy of the template has been provided with the Sample Project [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Visual%20Studio%20Templates/VCMTemplate).
-- In Windows explorer go to the following directory: `%USERPROFILE%\Documents\Visual Studio <version>\Templates\ProjectTemplates\C#`
-  - (Replace `<version>` with your version of Visual Studio. For example: \Visual Studio 2022\)
+- In Windows explorer go to the following directory: \
+  `%USERPROFILE%\Documents\Visual Studio <version>\Templates\ProjectTemplates\C#`
+  - (Replace `<version>` with your version of Visual Studio. For example: `\Visual Studio 2022\ `)
   - Copy the VCM Template folder to the directory
-- Open Visual Studio and choose "Create a new project"
+
+You may need to update the Visual Studio Template Cache before you can proceed.
+To do this, open the `Developer Command Prompt` for your version of Visual Studio, and `Run as Administrator`
+
+![VSCommandPrompt](img/VSCommandPrompt.png)
+
+Once open run the following command: `devenv /installvstemplates` \
+
+![templateinstall](img/templateinstall.png)
+
+Open Visual Studio and choose "Create a new project"
 
 ![VisualStudioNewProject](img/visualstudio_newproject.png)
 
-- Select the VCM Template
+Select the VCM Template
 
 ![VisualStudioNewProject](img/visualstudio_vcm.png)
 
-- Enter a name for the project (such as the name for your mod) and location
-  - We recommend having a Git repository for your mod project solutions. You can either create a new one or reusing an existing one.
+Enter a name for the project (such as the name for your mod) and location.
+ - We recommend having a Git repository for your mod project solutions. So the location is not an existing repository, we recommend create a new one from that directory. You can read more about getting started with Git [here](../GettingStarted/GettingStarted.md).
 
 Once the project is created, you can open it with Visual Studio or another preferred IDE to write the C# code for your mod.
+
+You can read more about code patching [here](../ModScripting/HarmonyPatching.md).
 
 ### Updating the Solution's Assembly Reference for Void Crew
 In the event of an update, you will probably want to update the assembly used by the mod solution. This will allow you to see
