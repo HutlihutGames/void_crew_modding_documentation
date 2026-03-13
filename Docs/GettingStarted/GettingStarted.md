@@ -40,14 +40,14 @@ Git also makes it easy to download and update external resources such as:
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common)
 - The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample)
 
-**Do I need GitHub?**
-No. Github works entirely on your computer. You do not need to upload your project anywhere, unless you want to:
+### Do I need GitHub?  
+No, Git works entirely on your computer. GitHub is an online hosting/publishing service for Git Repositories. You do not need to upload your project anywhere, unless you want to:
 - Collaborate with others
 - Share your source code
 - Publish your project as open source
 For many, Git will simply act as a **local backup and version history system**.
 
-**Git Client**
+### Git Client  
 Our recommended free Git client is [Fork](https://git-fork.com/). Installing Fork will also install Git on your system for you.
 
 Many coding IDEs also have Git built-in, and that can also work well for simple solo projects. 
