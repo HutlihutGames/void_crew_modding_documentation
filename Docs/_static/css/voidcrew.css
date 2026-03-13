@@ -135,6 +135,18 @@ ol li::marker {
     color: var(--ui-color__green);
 }
 
+.highlight .nt {
+    color: var(--ui-color__green);
+}
+
+.highlight .s2 {
+    color: var(--ui-color__blue);
+}
+
+.highlight .mi {
+    color: var(--ui-color__blue);
+}
+
 /* Inline code */
 code {
     background: var(--ui-color__dark-grey);
