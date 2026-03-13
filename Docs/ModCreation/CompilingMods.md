@@ -38,7 +38,7 @@ To do this, open the `Developer Command Prompt` for your version of Visual Studi
 
 ![VSCommandPrompt](img/VSCommandPrompt.png)
 
-Once open run the following command: `devenv /installvstemplates` \
+Once open run the following command: `devenv /installvstemplates` 
 
 ![templateinstall](img/templateinstall.png)
 

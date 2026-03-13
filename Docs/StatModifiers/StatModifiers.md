@@ -11,6 +11,43 @@ Objects that apply stat modifiers can be many things, but most commonly: Carryab
 Stat modifiers from weapon mods generally only propagate to stat collections within the weapon they are added to.
 However, relics and homunculi will try to apply modifiers across the whole player ship and its modules.
 
+## Stat Modifier JSON Structure
+Below is an example of a simply stat modifier written in JSON. This modifier does the following:
+- Target the stat with the name "PowerWanted"
+- Value modification type is "PrimaryAddend" (additive to base value)
+- Modifier should be dynamically toggled depending on the conditions of type:
+  - "SinglePlayer"
+- Modified amount when active is -2
+- Affects only targets that have the required tag "Module_Brain"
+
+```json
+{
+  "modifiers": [
+    {
+      "name": "PowerWanted",
+      "type": "PrimaryAddend",
+      "dynamic_condition": {
+        "type": "SinglePlayer"
+      },
+      "amount": -2,
+      "tag_config": {
+        "required": [
+          "Module_Brain"
+        ]
+      }
+    }
+  ]
+}
+```
+
+Its important to note that **the "name" token is not the name of the modifier**, but the name of the stat you want to modify.
+It has the same purpose as the "id" token in that sense, which can also be used. Using "name" is just recommended over "id" 
+because it makes the data more readable.
+
+Every modifier **must** have either a "name" or "id" token to be valid. You can see the names of relevant stats at the end of this chapter.
+
+The name of the modifier in UI is based on the name of the source (such as the name of the relic).
+
 ## Types of Stat Modifiers
 There are four types of modifiers that affect how the modifier value is mathematically applied to the base value on the stat.
 
@@ -57,7 +94,7 @@ Result =
 ```
 
 ## Weapon Stats
-| Stat                      | Description                                                                                                                                                                                                                           | Normal Base Values |
+| Stat name                 | Description                                                                                                                                                                                                                           | Normal Base Values |
 |:--------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------:|
 | Damage                    | How much damage a weapon will do per shot, before multipliers from damage and armor types are applied.<br/> Note that internal numbers are multiplied by 100 before they are shown in UI.                                             |           1 to 100 |
 | Firerate                  | How many shots the weapon can fire per second. For charge-up weapons like the beamcaster, this is instead a multiplier to the charge speed.                                                                                           |          0.1 to 30 |
@@ -86,7 +123,7 @@ Beware that many pip stats are legacy and might no longer be used. Additional sc
 
 ## Player Ship Stats
 
-| Stat                    | Description                                                                                                     | Typical Base Values |
+| Stat name               | Description                                                                                                     | Typical Base Values |
 |:------------------------|:----------------------------------------------------------------------------------------------------------------|--------------------:|
 | ShieldMaxHitPoints      | How much damage the ship can take before it is disabled.                                                        |          150 to 450 |
 | ShieldRechargeSpeed     | How fast the shield recharges                                                                                   |            10 to 15 |
@@ -111,7 +148,7 @@ Beware that many pip stats are legacy and might no longer be used. Additional sc
 
 ## Movement Stats
 
-| Stat                         | Description                                                                                                                                            | Typical Base Values |
+| Stat name                    | Description                                                                                                                                            | Typical Base Values |
 |:-----------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------:|
 | ForwardPower                 | Scales how strongly the ship moves forward and backwards.                                                                                              |                   1 |
 | YawTorque                    | Scales the ship's movement torque along its Y rotation.                                                                                                |                   1 |
@@ -130,22 +167,22 @@ Note: ForwardPowerPip, YawTorquePip, ElevationPowerPip, StrafePowerPip, PilotAid
 
 ## Power Stats
 
-| Stat                     | Description                                                                                                                                                                  | Typical Base Values |
-|:-------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------:|
-| PowerWanted              | How many power units is used by the module when active.                                                                                                                      |              1 to 6 |
-| PowerProvided            | How much power is produced by a power provider (Central Computer and Power Generators).                                                                                      |              1 to 3 |
-| BatteryRechargeAmount    | How much battery charge is generated per second. Battery sockets apply a modifier from this stat's value to the same stat on the battery (value is 0 on battery by default). |             2 to 20 |
-| BreakerTemperatureShift  | How much breaker temperature will change per second for each power unit the ship is overloaded by. Breaker chance to trigger is determined by its temperature.               |           -0.5 to 1 |
+| Stat name               | Description                                                                                                                                                                  | Typical Base Values |
+|:------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------:|
+| PowerWanted             | How many power units is used by the module when active.                                                                                                                      |              1 to 6 |
+| PowerProvided           | How much power is produced by a power provider (Central Computer and Power Generators).                                                                                      |              1 to 3 |
+| BatteryRechargeAmount   | How much battery charge is generated per second. Battery sockets apply a modifier from this stat's value to the same stat on the battery (value is 0 on battery by default). |             2 to 20 |
+| BreakerTemperatureShift | How much breaker temperature will change per second for each power unit the ship is overloaded by. Breaker chance to trigger is determined by its temperature.               |           -0.5 to 1 |
 
 ## Utility Stats
 
-| Stat                     | Description                                                                                                                  | Typical Base Values |
-|:-------------------------|:-----------------------------------------------------------------------------------------------------------------------------|--------------------:|
-| ProcessingSpeed          | Scales fabricator speed and auto mechanic action cooldown time. Also used by download stations to determine download speed.  |                   1 |
-| HealingSpeed             | How much Sarcograph will heal the occupant per second.                                                                       |                 0.2 |
-| ActionCooldown           | Intended for interactive modules that should have an action cooldown. Currently unused, but may be used for future modules.  |                     |
-| EffectRadius             | Intended for interactive modules that should have an AOE effect. Currently unused, but may be used for future modules later. |                     |
-| AttractorMaxRange        | Maximum range of the Gravity Scoop.                                                                                          |                 200 |
-| AttractorPullVelocity    | How many meters items are pulled towards the gravity scoop per second.                                                       |                  10 |
-| LifeSupportEffectivity   | Multiplier used to scale the effectivity of life support modules.                                                            |                   1 |
-| PassiveTemperatureShift  | How much the ship passively changes the temperature of interior room atmospheres.                                            |                   0 |
+| Stat name               | Description                                                                                                                  | Typical Base Values |
+|:------------------------|:-----------------------------------------------------------------------------------------------------------------------------|--------------------:|
+| ProcessingSpeed         | Scales fabricator speed and auto mechanic action cooldown time. Also used by download stations to determine download speed.  |                   1 |
+| HealingSpeed            | How much Sarcograph will heal the occupant per second.                                                                       |                 0.2 |
+| ActionCooldown          | Intended for interactive modules that should have an action cooldown. Currently unused, but may be used for future modules.  |                     |
+| EffectRadius            | Intended for interactive modules that should have an AOE effect. Currently unused, but may be used for future modules later. |                     |
+| AttractorMaxRange       | Maximum range of the Gravity Scoop.                                                                                          |                 200 |
+| AttractorPullVelocity   | How many meters items are pulled towards the gravity scoop per second.                                                       |                  10 |
+| LifeSupportEffectivity  | Multiplier used to scale the effectivity of life support modules.                                                            |                   1 |
+| PassiveTemperatureShift | How much the ship passively changes the temperature of interior room atmospheres.                                            |                   0 |
