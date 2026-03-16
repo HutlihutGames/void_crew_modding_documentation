@@ -3,59 +3,105 @@
 ```{toctree}
 :hidden:
 :maxdepth: -1
+:caption: About
+
+About/About
+```
+
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Introduction
 
 GettingStarted/GettingStarted
 CreatingAssetBundles/CreatingAssetBundles
-ModCreation/AssetMods
-ModCreation/CompilingMods
-ModCreation/TestingModsLocally
-ModCreation/UploadingMods
-ModScripting/HarmonyPatching
+```
+
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Cosmetics
+
+Cosmetics/Cosmetics
+```
+
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Carryables
+
+Carryables/Carryables
 StatModifiers/StatModifiers
 StatModifiers/DynamicModifiers
 Tags/Tags
 ```
 
-Documentation for how to create mods for Void Crew and how to use:
-- The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common)
-- The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample)
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Mod Creation
+
+ModCreation/AssetMods
+ModCreation/CompilingMods
+ModCreation/TestingModsLocally
+ModCreation/UploadingMods
+```
+
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Mod Scripting
+
+ModScripting/HarmonyPatching
+```
+
+Welcome to the official documentation for Void Crew Modding!
+
+Use the table of contents on the left or the search function to learn about more specific modding topics.
+
+The site covers documentation for how to create mods for Void Crew and how to use:
+- The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common): Public library used by Void Crew that mods can utilize for increased capabilities. 
+- The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample): Public sample Unity project which includes the common library, and features examples and helpers to get you started making Void Crew assets.
 
 Disclaimer: much of the below documentation is still WIP.
 
 Follow the guides below in order to get started and progress through the full modding workflow.
 
-## Documentation
+# Documentation Topics
 
-1. **[Getting Started](GettingStarted/GettingStarted.md)**  
+- **[Getting Started](GettingStarted/GettingStarted.md)**  
    Introduction and initial setup required before creating mods.
 
-2. **[Creating Asset Bundles](CreatingAssetBundles/CreatingAssetBundles.md)**  
-   Learn how to create asset bundles for Void Crew, including:
-   - [Carryable Weapon Mods and Relics](CreatingAssetBundles/Carryables/Carryables.md)
-   - [Custom Cosmetics](CreatingAssetBundles/Cosmetics/Cosmetics.md)
+- **[Creating Asset Bundles](CreatingAssetBundles/CreatingAssetBundles.md)**  
+   Introduction on how to create asset bundles for Void Crew, including:
+   - [Carryable Weapon Mods and Relics](Carryables/Carryables.md)
+   - [Custom Cosmetics](Cosmetics/Cosmetics.md)
 
-3. **[Asset Mods](ModCreation/AssetMods.md)**  
+- **[Asset Mods](ModCreation/AssetMods.md)**  
    Introduction on how to make mods without custom code, using only asset bundles.
 
-4. **[Compiling Mods](ModCreation/CompilingMods.md)**  
+- **[Compiling Mods](ModCreation/CompilingMods.md)**  
    Introduction on how to compile your own mods, which can include your own custom scripts.
 
-5. **[Code Injection with Harmony Patching](ModScripting/HarmonyPatching.md)**  
+- **[Code Injection with Harmony Patching](ModScripting/HarmonyPatching.md)**  
    Introduction on how to inject code into Void Crew using Harmony.
 
-6. **[Testing Mods Locally](ModCreation/TestingModsLocally.md)**  
+- **[Testing Mods Locally](ModCreation/TestingModsLocally.md)**  
    Steps for testing your mods locally before publishing.
 
-7. **[Uploading Mods](ModCreation/UploadingMods.md)**  
+- **[Uploading Mods](ModCreation/UploadingMods.md)**  
    How to upload and share your mods.
 
-8. **[Stat Modifiers](StatModifiers/StatModifiers.md)**  
+- **[Stat Modifiers](StatModifiers/StatModifiers.md)**  
    Documentation on Void Crew Stat Modifiers (StatMod).
 
-9. **[Dynamic Modifiers](StatModifiers/DynamicModifiers.md)**  
+- **[Dynamic Modifiers](StatModifiers/DynamicModifiers.md)**  
    Documentation on how dynamic stat modifiers work in Void Crew.
 
-10. **[Tags](Tags/Tags.md)**  
+- **[Tags](Tags/Tags.md)**  
     Documentation on Void Crew's tag system.
 
----
+# License and Contribution
+The documentation is licensed under our [Void Crew Modding Documentation License](https://github.com/HutlihutGames/void_crew_modding_documentation/blob/main/LICENSE). \
+This allows anyone to contribute and improve the documentation! \
+Contribution can be done via the [GitHub repository](https://github.com/HutlihutGames/void_crew_modding_documentation) where the documentation is hosted.

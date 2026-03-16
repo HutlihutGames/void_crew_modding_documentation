@@ -55,19 +55,10 @@ not conflict with assets created by others. Additionally, by ensuring your asset
 to update the mod with the assets and the game to still know it is the same asset (so for example cosmetics stay equipped).
 
 ## Types of Void Crew Asset Bundles
-
-```{toctree}
-:hidden:
-:maxdepth: -1
-
-Carryables/Carryables
-Cosmetics/Cosmetics
-```
-
 You can read more about how to create different types of asset bundles in the below chapters.
 
-**[Carryables](Carryables/Carryables.md)**
+**[Carryables](../Carryables/Carryables.md)**
 Learn about how to create custom weapon mods and relics.
 
-**[Cosmetics](Cosmetics/Cosmetics.md)**
+**[Cosmetics](../Cosmetics/Cosmetics.md)**
 Learn about how to create custom cosmetics.
