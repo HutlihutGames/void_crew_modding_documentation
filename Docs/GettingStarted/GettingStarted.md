@@ -48,18 +48,19 @@ No, Git works entirely on your computer. GitHub is an online hosting/publishing 
 For many, Git will simply act as a **local backup and version history system**.
 
 ### Git Client  
-Our recommended free Git client is [Fork](https://git-fork.com/). Installing Fork will also install Git on your system for you.
+There are many options for Git clients available, installing most will also install Git itself on your system.
 
-Many coding IDEs also have Git built-in, and that can also work well for simple solo projects. 
-If you're already comfortable using Git from within your editor, you can of course continue  
+Many coding IDEs also have Git built-in, and that can also work well for simple solo projects.
+If you're already comfortable using Git from within your editor, you can of course continue.
+
+Suggested Git Clients:
+- [GitHub Desktop](https://desktop.github.com/download/) (free)
+- [Sourcetree](https://www.sourcetreeapp.com/) (free)
+- [GitKraken](https://www.gitkraken.com/) (free for public repositories)
+- [Fork](https://git-fork.com/) (free for evaluation)
 
 Our recommendation to using a separate client is because they can give you a better overview of changes and provide
 more functionality. Fork is good for both newcomers and advanced users as it has a very clean UI and is simple to use.
-
-Other Git Client options:
-- GitHub Desktop
-- Sourcetree
-- GitKraken
 
 ## Setting up the Void Crew Samples Project
 Next, you will want to setup a clone of the Void Crew Samples Project. 
