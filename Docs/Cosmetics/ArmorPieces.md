@@ -83,6 +83,15 @@ Projection textures don't repeat (except for tiling ones), so don't worry about 
 
 ![ProjectionTexture](img/ProjectionTexture.png)
 
+## Materials Setup
+Materials assigned to the custom models will not be directly used currently.
+What this means is that the various textures defined by the cosmetic will be copied over to a new instance of the 
+same materials that all other armor pieces currently use.
+
+Therefore all the armor piece meshes must be setup such that they only have 1 material slot, which covers the whole mesh (+ one slot for projection if a helmet).
+
+We plan on expanding this feature in the future, so it will be easier for mods to utilize models that aren't setup to use a single material slot.
+
 ## Exporting From Blender
 To avoid weird orientations or sizes on cosmetics, make sure to export with the correct setup:
 - Up axis: Y+
