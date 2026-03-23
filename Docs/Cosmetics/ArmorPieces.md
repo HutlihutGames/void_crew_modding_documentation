@@ -98,6 +98,10 @@ To avoid weird orientations or sizes on cosmetics, make sure to export with the 
 - Forward axis: Z+
 - 1.0x scale compared to the provided mannequin (to check if that's correctly imported, the ectype should measure around 1.9 meters tall)
 
+In Unity's import settings for the model: disable `Convert Units`.
+
+![ConvertUnits](img/convertunits.png)
+
 ## Helmet
 ![Cosmetic_Helmet](img/Cosmetic_Helmet.png)
 
