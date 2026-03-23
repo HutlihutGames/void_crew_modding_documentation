@@ -16,10 +16,13 @@ To export your asset:
 ![ExportSelected](img/Unity_ExportSelected.png)
 
 You will find your exported asset at the root of your Unity Project folder, in a folder named "Exported Assets". 
-There will be two files named after the folder you used to export the asset, one with a ".manifest" filetype. 
-Only the one _without_ the ".manifest" filetype is needed.
+This should open automatically after exporting completes.
 
-_Note: if you do not see the ".manifest", [you need to enable file extensions in Windows explorer](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01#id0ebf=windows_11)._
+There will be two files both named after the folder you used to export the asset bundle, with a ".metem" and ".manifest" filetype.
+
+**The ".metem" file is what you need to include in your mod.** The ".manifest" file is _not_ needed.
+
+_Note: if you cannot tell the files apart, [you need to enable file extensions in Windows explorer](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01#id0ebf=windows_11)._
 
 ## Size References
 If you want to create your own 3D assets, you will likely want some references for shape and scale. \
