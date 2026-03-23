@@ -2,6 +2,9 @@
 ## Carryable Base Asset
 This is the base component for making carryable assets. Use this component for adding simple carryables. 
 
+If needed you can find basic **example models** for weapon mods and relics in the 
+[Size References](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/SizeReferences) folder of the Sample Project.
+
 ![CarryableBaseAsset](img/CarryableBaseAsset.png)
 
 **Override Collider** (Optional): 
