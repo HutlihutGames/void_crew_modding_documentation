@@ -31,8 +31,8 @@ This can be useful if you want to change the direction or the size of patterns.
 **[ProjectionTest.png](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/CosmeticsHelpers)**: 
 A test projection with a color grid.
 
-## Skinning and Texturing
-For creating any type of wearable cosmetics, follow the steps below.
+## Skinning
+For creating any type of wearable cosmetics, you will need to skin the cosmetic to the ectype rig. You may also know this as weight painting. 
 
 Add your custom mesh to the ectype base rig. You can use this mannequin to do the skinning.
 
@@ -40,6 +40,7 @@ It is recommended that helmets are only driven by the “head” bone for accura
 
 ![EctypeRig](img/EctypeRig.png)
 
+## Texturing
 Cosmetics can use five different textures
 
 **Base color**: This is the main color texture. You may also know it as the Albedo Map.
@@ -109,6 +110,10 @@ In Unity's import settings for the model: disable `Convert Units`.
 Reference to the `Skinned Mesh Renderer` at the root prefab of the helmet, which contains the helmet mesh. 
 The first material must be for the helmet, and second material for the projection.
 
+```{important}
+To drag and drop the Skinned Mesh Renderer you must drag and drop the component itself into the field. Dragging the prefab to the field does not work. 
+```
+
 ## Shoulder Pieces
 ![Cosmetic_Shoulder](img/Cosmetic_Shoulder.png)
 
@@ -125,7 +130,6 @@ Reference to the `Skinned Mesh Renderer` at the root prefab of the suit, which c
 
 **Arm Mesh**:
 Reference to the `Skinned Mesh Renderer` at the root prefab of the arms, which contains the arms mesh.
-
 
 ## Chest Piece
 ![Cosmetic_Chest](img/Cosmetic_Chest.png)

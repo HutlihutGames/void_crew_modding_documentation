@@ -206,3 +206,15 @@ code {
     text-wrap: auto;
     max-width: 100%;
 }
+
+/* Admonitions */
+.admonition.important{
+    background: var(--ui-color__light-grey);
+}
+.admonition.important .admonition-title{
+    background: var(--ui-color__item-background);
+    color: var(--ui-color__orange);
+}
+.admonition.important p{
+    color: var(--ui-color__white);
+}
