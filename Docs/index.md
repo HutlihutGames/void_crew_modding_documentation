@@ -23,6 +23,11 @@ CreatingAssetBundles/CreatingAssetBundles
 :caption: Cosmetics
 
 Cosmetics/Cosmetics
+Cosmetics/CosmeticColors
+Cosmetics/CosmeticPatterns
+Cosmetics/ArmorPieces
+Cosmetics/SkinningGuide
+Cosmetics/HelmetProjections
 ```
 
 ```{toctree}
