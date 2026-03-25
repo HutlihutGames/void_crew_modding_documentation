@@ -1,6 +1,6 @@
-# Ship Visuals
-You can add custom visuals to be attached to the player ships. 
-These visuals can theoretically contain any native game object components (such as particle systems, colliders, visual effects, audio etc.)
+# Creating Ship & Hub Visuals
+You can add custom visuals to be attached to the player ships or to be included in the Hub. 
+These visuals can theoretically contain any native Unity game object components (such as particle systems, colliders, visual effects, audio etc.)
 
 Example Ship Visuals are included in the Sample Project [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/Mods/ShipVisuals).
 

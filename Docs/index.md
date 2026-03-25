@@ -33,9 +33,9 @@ Cosmetics/HelmetProjections
 ```{toctree}
 :hidden:
 :maxdepth: -1
-:caption: Ship Customization
+:caption: Ship & Hub Customization
 
-ShipCustomization/ShipVisuals
+ShipCustomization/ShipAndHubVisuals
 ```
 
 ```{toctree}
@@ -98,7 +98,7 @@ Follow the guides below in order to get started and progress through the full mo
    Introduction on how to create asset bundles for Void Crew, including:
    - [Carryable Weapon Mods and Relics](Carryables/Carryables.md)
    - [Custom Cosmetics](Cosmetics/Cosmetics.md)
-   - [Custom Ship Visuals](ShipCustomization/ShipVisuals.md)
+   - [Custom Ship Visuals](ShipCustomization/ShipAndHubVisuals.md)
 
 - **[Asset Mods](ModCreation/AssetMods.md)**  
    Introduction on how to make mods without custom code, using only asset bundles.
