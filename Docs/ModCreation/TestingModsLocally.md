@@ -19,3 +19,5 @@ This can be useful when testing quick iterations of the assets.
 - Choose "Import local mod" and then "Select file"
 - Select your zipped mod file
 - Start modded game via R2ModMan
+
+Always test your mods before distributing!

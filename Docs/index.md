@@ -60,6 +60,15 @@ ModCreation/UploadingMods
 ModScripting/HarmonyPatching
 ```
 
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Debugging
+
+Debugging/CheckingLogs
+Debugging/CommonIssues
+```
+
 Welcome to the official documentation for Void Crew Modding!
 
 Use the table of contents on the left or the search function to learn about more specific modding topics.
