@@ -241,6 +241,17 @@ code {
     color: var(--ui-color__white);
 }
 
+.admonition.hint{
+    background: var(--ui-color__light-grey);
+}
+.admonition.hint .admonition-title{
+    background: var(--ui-color__item-background);
+    color: var(--ui-color__light-green);
+}
+.admonition.hint p{
+    color: var(--ui-color__white);
+}
+
 .admonition.note{
     background: var(--ui-color__light-grey);
 }

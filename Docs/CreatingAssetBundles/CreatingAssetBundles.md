@@ -38,6 +38,9 @@ This is the base component needed for the asset to be loaded into the game. It h
 ![VoidCrewAsset](img/VoidCrewAsset.png)
 These fields are used to populate the asset's Context Info in the game. Context info is the data structure used to fill out the tooltips you see when looking at items or hovering over them in UI.
 
+The name of the asset will also be used for information regarding mod compatibility and other debugging info. So even assets that don't have tooltips
+should at least still have a name.
+
 **Note for Cosmetics**: Cosmetics use scriptable objects instead of prefabs for the assets. So the above fields are found on the cosmetic objects themselves instead of the Void Crew Asset component.
 ![ColorScheme](img/ColorScheme.png)
 

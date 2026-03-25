@@ -33,6 +33,14 @@ Cosmetics/HelmetProjections
 ```{toctree}
 :hidden:
 :maxdepth: -1
+:caption: Ship Customization
+
+ShipCustomization/ShipVisuals
+```
+
+```{toctree}
+:hidden:
+:maxdepth: -1
 :caption: Carryables
 
 Carryables/Carryables
@@ -77,7 +85,7 @@ The site covers documentation for how to create mods for Void Crew and how to us
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common): Public library used by Void Crew that mods can utilize for increased capabilities. 
 - The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample): Public sample Unity project which includes the common library, and features examples and helpers to get you started making Void Crew assets.
 
-Disclaimer: much of the below documentation is still WIP.
+Disclaimer: much of the documentation is still WIP.
 
 Follow the guides below in order to get started and progress through the full modding workflow.
 
@@ -90,6 +98,7 @@ Follow the guides below in order to get started and progress through the full mo
    Introduction on how to create asset bundles for Void Crew, including:
    - [Carryable Weapon Mods and Relics](Carryables/Carryables.md)
    - [Custom Cosmetics](Cosmetics/Cosmetics.md)
+   - [Custom Ship Visuals](ShipCustomization/ShipVisuals.md)
 
 - **[Asset Mods](ModCreation/AssetMods.md)**  
    Introduction on how to make mods without custom code, using only asset bundles.
