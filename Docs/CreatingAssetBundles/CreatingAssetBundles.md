@@ -54,7 +54,7 @@ It is **IMPORTANT** that when you make **new** assets that you either:
 
 **Never** make your assets by modifying other examples or templates provided by us or other modders.
 Doing so will mean they have the same ID (GUID) in their metadata, which will cause problems for Void Crew loading
-the assets. 
+the assets.
 
 By duplicating or making the asset from scratch a new ID will be generated automatically, which ensures your assets will
 not conflict with assets created by others. Additionally, by ensuring your assets keep a unique ID you will also be able
@@ -68,3 +68,6 @@ Learn about how to create custom weapon mods and relics.
 
 **[Cosmetics](../Cosmetics/Cosmetics.md)**
 Learn about how to create custom cosmetics.
+
+**[Ship and Hub Visuals](../ShipCustomization/ShipAndHubVisuals.md)**
+Learn about how to create custom visuals for the Hub and different player Ships.
