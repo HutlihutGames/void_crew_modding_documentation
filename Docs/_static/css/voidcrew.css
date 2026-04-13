@@ -262,3 +262,26 @@ code {
 .admonition.note p{
     color: var(--ui-color__white);
 }
+
+/* Lightbox Thumbnails */
+.thumb,
+.thumb img {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    float: none;
+    position: static;
+}
+
+.thumb.thumb-large,
+.thumb.thumb-large img {
+    display: inline-block;
+    max-width: 500px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    float: none;
+    position: static;
+}

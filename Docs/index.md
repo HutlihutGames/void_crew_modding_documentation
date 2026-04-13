@@ -15,6 +15,7 @@ About/About
 
 GettingStarted/GettingStarted
 CreatingAssetBundles/CreatingAssetBundles
+CreatingAssetBundles/ArtDirection
 ```
 
 ```{toctree}
