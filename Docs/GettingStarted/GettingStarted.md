@@ -12,7 +12,6 @@ Automated switching to modded profile to be implemented later.
 
 ## Mod Manager
 First thing its important to know how mods are installed for Void Crew. 
-You will also need a Mod Manager for testing your mods locally for testing.
 
 Void Crew Mods are primarily distributed via [Thunderstore](https://thunderstore.io/c/void-crew/?included_categories=705&section=mods&ordering=top-rated)
 
