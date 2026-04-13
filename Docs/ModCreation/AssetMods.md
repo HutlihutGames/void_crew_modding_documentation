@@ -40,7 +40,7 @@ The 1.3.0 Prebuild version of VoidManager by Nihility Shift is available [here](
 This version of Void Manager will handle loading and registering all asset bundles with the .metem extension that have been loaded by your mod manager.
 
 ```{important}
-The Void Manager dependency is a temporary requirement. Hutlihut will be publishing a separate mod to handle the registrations as a dependency.
+The Void Manager dependency is a temporary requirement. Hutlihut will be making a separate solution to handle the registrations.
 ```
 
 # Updating Void Crew Common
