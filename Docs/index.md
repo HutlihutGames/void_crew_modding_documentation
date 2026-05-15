@@ -14,8 +14,10 @@ About/About
 :caption: Introduction
 
 GettingStarted/GettingStarted
-CreatingAssetBundles/CreatingAssetBundles
-CreatingAssetBundles/ArtDirection
+GettingStarted/YourFirstMod
+CreatingAssets/CreatingAssets
+CreatingAssets/ArtDirection
+GettingStarted/Glossary
 ```
 
 ```{toctree}
@@ -56,7 +58,7 @@ Tags/Tags
 :caption: Mod Creation
 
 ModCreation/AssetMods
-ModCreation/CompilingMods
+ModCreation/ModDescriptor
 ModCreation/TestingModsLocally
 ModCreation/UploadingMods
 ```
@@ -66,6 +68,7 @@ ModCreation/UploadingMods
 :maxdepth: -1
 :caption: Mod Scripting
 
+ModScripting/ScriptedMods
 ModScripting/HarmonyPatching
 ```
 
@@ -95,26 +98,23 @@ Follow the guides below in order to get started and progress through the full mo
 - **[Getting Started](GettingStarted/GettingStarted.md)**  
    Introduction and initial setup required before creating mods.
 
-- **[Creating Asset Bundles](CreatingAssetBundles/CreatingAssetBundles.md)**  
-   Introduction on how to create asset bundles for Void Crew, including:
+- **[Your First Mod](GettingStarted/YourFirstMod.md)**  
+  Tutorial on how to create your first mod, step by step.
+
+- **[Creating Assets](CreatingAssets/CreatingAssets.md)**  
+   Introduction on how to create assets for Void Crew, including:
    - [Carryable Weapon Mods and Relics](Carryables/Carryables.md)
    - [Custom Cosmetics](Cosmetics/Cosmetics.md)
    - [Custom Ship Visuals](ShipCustomization/ShipAndHubVisuals.md)
 
-- **[Asset Mods](ModCreation/AssetMods.md)**  
-   Introduction on how to make mods without custom code, using only asset bundles.
-
-- **[Compiling Mods](ModCreation/CompilingMods.md)**  
-   Introduction on how to compile your own mods, which can include your own custom scripts.
-
-- **[Code Injection with Harmony Patching](ModScripting/HarmonyPatching.md)**  
-   Introduction on how to inject code into Void Crew using Harmony.
+- **[Asset Bundle Mods](ModCreation/AssetMods.md)**  
+   Guide on how to make mods purely from assets created within Unity.
 
 - **[Testing Mods Locally](ModCreation/TestingModsLocally.md)**  
-   Steps for testing your mods locally before publishing.
+   Guide for testing your mods locally before publishing.
 
 - **[Uploading Mods](ModCreation/UploadingMods.md)**  
-   How to upload and share your mods.
+   Guide to uploading and publishing your mods.
 
 - **[Stat Modifiers](StatModifiers/StatModifiers.md)**  
    Documentation on Void Crew Stat Modifiers (StatMod).
@@ -124,6 +124,12 @@ Follow the guides below in order to get started and progress through the full mo
 
 - **[Tags](Tags/Tags.md)**  
     Documentation on Void Crew's tag system.
+
+- **[Compiling Mods](ModScripting/ScriptedMods.md)**  
+  Introduction on how to compile your own mods, which can include your own custom scripts.
+
+- **[Code Injection with Harmony Patching](ModScripting/HarmonyPatching.md)**  
+  Introduction on how to inject code into Void Crew using Harmony.
 
 # License and Contribution
 The documentation is licensed under our [Void Crew Modding Documentation License](https://github.com/HutlihutGames/void_crew_modding_documentation/blob/main/LICENSE). \

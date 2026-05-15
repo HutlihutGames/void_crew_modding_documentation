@@ -1,7 +1,7 @@
 # Stat Modifiers
 This chapter will go over the various stat modifiers (StatMod) you are most likely going to need to use when making modded assets for Void Crew.
 
-Objects in Void Crew that uses stats have what is called a Stat Tag Collection. 
+Objects in Void Crew that use stats have what is called a Stat Tag Collection. 
 This is a data structure which contains definitions of various stats from HP to Damage. It is built in such a way that you can add various modifiers that affect the base value of the stat, resulting in a new value. These modifiers can even propagate to child stat collections, and target collections with specific tags.
 
 Objects that hold Stat Tag Collections are Orbit Objects (Players, Enemies, The Player Ship, Ship Modules, Destructible Containers...).
@@ -12,7 +12,7 @@ Stat modifiers from weapon mods generally only propagate to stat collections wit
 However, relics and homunculi will try to apply modifiers across the whole player ship and its modules.
 
 ## Stat Modifier JSON Structure
-Below is an example of a simply stat modifier written in JSON. This modifier does the following:
+Below is an example of a simple stat modifier written in JSON. This modifier does the following:
 - Target the stat with the name "PowerWanted"
 - Value modification type is "PrimaryAddend" (additive to base value)
 - Modifier should be dynamically toggled depending on the conditions of type:
@@ -40,7 +40,7 @@ Below is an example of a simply stat modifier written in JSON. This modifier doe
 }
 ```
 
-Its important to note that **the "name" token is not the name of the modifier**, but the name of the stat you want to modify.
+It's important to note that **the "name" token is not the name of the modifier**, but the name of the stat you want to modify.
 It has the same purpose as the "id" token in that sense, which can also be used. Using "name" is just recommended over "id" 
 because it makes the data more readable.
 
@@ -101,9 +101,9 @@ Result =
 | Range                     | The range of the weapon projectile in meters. The weapon projectile is destroyed if it moves past this range.                                                                                                                         |        500 to 2000 |
 | ProjectileSpeed           | How fast the weapon projectile moves per second. Does not affect beam weapons.                                                                                                                                                        |       1000 to 2000 |
 | Accuracy                  | Partly determines how much a projectile can spread (spread is a separate thing). Essentially a value of 1 here means the weapon is using the lowest spread possible, and 0 being the most spread. <br/> Does not affect beam weapons. |     Clamped 0 to 1 |
-| RotationSpeed             | Determines how fast weapons can rotate. Can be be used to modify how fast a weapon is able to rotate while shooting, although this functionality is not actively used.                                                                |               1000 |
+| RotationSpeed             | Determines how fast weapons can rotate. Can be used to modify how fast a weapon is able to rotate while shooting, although this functionality is not actively used.                                                                   |               1000 |
 | DamageSecondary           | Used internally by editor tools, not used at runtime.                                                                                                                                                                                 |                    |
-| MaxZoom                   | Affects much you zoom in on the weapon when holding right click by modifying your field of view.                                                                                                                                      |           1.2 to 2 |
+| MaxZoom                   | Affects how much you zoom in on the weapon when holding right click by modifying your field of view.                                                                                                                                  |           1.2 to 2 |
 | ReloadTime                | How long it takes to reload the weapon without active reload. Only affects weapons using light or heavy caliber magazines.                                                                                                            |            1 to 12 |
 | MagazineReservoirTick     | How long it takes between each tick for the magazine to reservoir to refill. The amount refilled per tick depends on the weapon.                                                                                                      |          1.25 to 2 |
 | ActiveReloadThreshold     | Fraction of the reload time where active reload can be performed.                                                                                                                                                                     |       0.025 to 0.1 |

@@ -54,7 +54,7 @@ Black means no emission, anything else becomes emissive. The emission color is d
 This is an HDR color, so you can increase the intensity of the emission.  
 
 **Normal Map**: A regular normal texture. Adds "depth" to the texture, to make the mesh look less flat without adding additional geometry.
-The normal map texture to `Texture Type: Normal Map` in Unity.
+Set the normal map texture to `Texture Type: Normal Map` in Unity.
 
 **Mask Map**: This texture controls the metallicness, smoothness, and ambient occlusion of the cosmetic using the following color channels:
 - Red → Metallic
@@ -127,7 +127,7 @@ Reference to the `Skinned Mesh Renderer` at the root prefab of the shoulder, whi
 ## Suit
 ![Cosmetic_Suit](img/Cosmetic_Suit.png)
 
-Note that The suit and arms share material and are a part of the same cosmetic, but need separate skinned mesh renderers.
+Note that the suit and arms share material and are a part of the same cosmetic, but need separate skinned mesh renderers.
 
 **Suit Mesh**:
 Reference to the `Skinned Mesh Renderer` at the root prefab of the suit, which contains the suit mesh.
