@@ -94,7 +94,7 @@ Determines which drop table the item should be added to.
 - **On Death Survivor 01**: Drops from enemy kills in survivor mode in the first and second wave.
 - **On Death Survivor 23**: Drops from enemy kills in survivor mode in the third and fourth wave.
 - **On Death Survivor 45**: Drops from enemy kills in survivor mode with fifth wave and onwards.
-- **Generic Drop**: Drops from generic containers floating in space which can be randomly found in sectors. Also 
+- **Generic Drop**: Drops from generic containers floating in space which can be randomly found in sectors. 
 - **Wreck_Ambush**: Loot found in Ambush bases.
 - **Wreck_Generic**: Loot found in random generic wrecks. Also includes raid, download, ambush and other asteroid bases.
 - **Wreck_METEM**: Wrecks that appear in Survivor and Interdiction. 
