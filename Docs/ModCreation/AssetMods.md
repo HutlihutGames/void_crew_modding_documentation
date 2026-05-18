@@ -58,7 +58,7 @@ Once the folder is zipped, it is ready for either [installing via a mod manager]
 Asset bundles installed via mod managers require BepInEx as a dependency, in forder for Void Crew to know where to look for the .metem files. This dependency is automatically added to your Mod Descriptor by default.
 ```
 
-# Updating Void Crew Common
+## Updating Void Crew Common
 If the [Void Crew Common library](https://github.com/HutlihutGames/void_crew_common) is updated by Hutlihut Games, 
 you may need to manually update the library in your Unity project. 
 
