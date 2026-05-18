@@ -77,6 +77,7 @@ ModScripting/HarmonyPatching
 :maxdepth: -1
 :caption: Debugging
 
+Debugging/DebugCamera
 Debugging/CheckingLogs
 Debugging/CommonIssues
 ```

@@ -9,7 +9,7 @@ It's possible to test your asset bundles without installing them via a mod manag
 This can be useful when testing quick iterations of the assets.
 
 If you haven't already, you must first export your assets to a `.metem` file. When testing without a mod manager, 
-the easiest way to do this is by using the **[Export Asset Bundles](../CreatingAssets/CreatingAssets.md#asset-bundle-creation)** tool.
+the easiest way to do this is by using the **[Export Asset Bundles](../CreatingAssets/CreatingAssets.md#creating-assets)** tool.
 
 - Go to your Void Crew install folder (the same folder that has Void Crew.exe).
   - Open install folder via Steam: Right click on Void Crew > Manage > Browse Local Files.
