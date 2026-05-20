@@ -15,6 +15,7 @@ About/About
 
 GettingStarted/GettingStarted
 CreatingAssetBundles/CreatingAssetBundles
+CreatingAssetBundles/ArtDirection
 ```
 
 ```{toctree}
@@ -23,6 +24,19 @@ CreatingAssetBundles/CreatingAssetBundles
 :caption: Cosmetics
 
 Cosmetics/Cosmetics
+Cosmetics/CosmeticColors
+Cosmetics/CosmeticPatterns
+Cosmetics/ArmorPieces
+Cosmetics/SkinningGuide
+Cosmetics/HelmetProjections
+```
+
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Ship & Hub Customization
+
+ShipCustomization/ShipAndHubVisuals
 ```
 
 ```{toctree}
@@ -55,6 +69,15 @@ ModCreation/UploadingMods
 ModScripting/HarmonyPatching
 ```
 
+```{toctree}
+:hidden:
+:maxdepth: -1
+:caption: Debugging
+
+Debugging/CheckingLogs
+Debugging/CommonIssues
+```
+
 Welcome to the official documentation for Void Crew Modding!
 
 Use the table of contents on the left or the search function to learn about more specific modding topics.
@@ -63,7 +86,7 @@ The site covers documentation for how to create mods for Void Crew and how to us
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common): Public library used by Void Crew that mods can utilize for increased capabilities. 
 - The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample): Public sample Unity project which includes the common library, and features examples and helpers to get you started making Void Crew assets.
 
-Disclaimer: much of the below documentation is still WIP.
+Disclaimer: much of the documentation is still WIP.
 
 Follow the guides below in order to get started and progress through the full modding workflow.
 
@@ -76,6 +99,7 @@ Follow the guides below in order to get started and progress through the full mo
    Introduction on how to create asset bundles for Void Crew, including:
    - [Carryable Weapon Mods and Relics](Carryables/Carryables.md)
    - [Custom Cosmetics](Cosmetics/Cosmetics.md)
+   - [Custom Ship Visuals](ShipCustomization/ShipAndHubVisuals.md)
 
 - **[Asset Mods](ModCreation/AssetMods.md)**  
    Introduction on how to make mods without custom code, using only asset bundles.

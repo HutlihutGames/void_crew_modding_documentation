@@ -3,7 +3,9 @@ In the sample project you can find the following files to help you get started o
 
 **Ectype Base Rig:** **[Ectype_Base.fbx](https://github.com/HutlihutGames/void_crew_mods_sample/blob/master/Assets/Mods/Cosmetics/Ectype_Base.fbx)**
 This is a basic Ectype mannequin to help with skinning, or to use as a base for making new armor pieces. 
-Blend file is also available [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Blend).
+
+Blend file is also available [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Blend). 
+Note that you need Blender version 5.0 or later to open the Blend file. If you prefer using an older version of Blender, import the fbx file instead.
 
 There are 4 types of cosmetic armor pieces ectypes can wear:
 - <code style="color : red">Helmet</code>
@@ -37,6 +39,8 @@ For creating any type of wearable cosmetics, you will need to skin the cosmetic 
 Add your custom mesh to the ectype base rig. You can use this mannequin to do the skinning.
 
 It is recommended that helmets are only driven by the “head” bone for accurate look direction.
+
+If you're new to blender and haven't tried skinning before, we have written a simple skinning guide [here](SkinningGuide.md) to help you get started.
 
 ![EctypeRig](img/EctypeRig.png)
 
@@ -129,7 +133,11 @@ Note that The suit and arms share material and are a part of the same cosmetic, 
 Reference to the `Skinned Mesh Renderer` at the root prefab of the suit, which contains the suit mesh.
 
 **Arm Mesh**:
-Reference to the `Skinned Mesh Renderer` at the root prefab of the arms, which contains the arms mesh.
+Reference to the `Skinned Mesh Renderer` at the root prefab of the arms, which contains the arms mesh. 
+
+```{important}
+Both the Suit Mesh and Arm Mesh fields must be filled, or the asset will fail conversion. Even if they point to the same renderer. 
+```
 
 ## Chest Piece
 ![Cosmetic_Chest](img/Cosmetic_Chest.png)

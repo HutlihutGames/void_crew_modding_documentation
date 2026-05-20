@@ -241,6 +241,17 @@ code {
     color: var(--ui-color__white);
 }
 
+.admonition.hint{
+    background: var(--ui-color__light-grey);
+}
+.admonition.hint .admonition-title{
+    background: var(--ui-color__item-background);
+    color: var(--ui-color__light-green);
+}
+.admonition.hint p{
+    color: var(--ui-color__white);
+}
+
 .admonition.note{
     background: var(--ui-color__light-grey);
 }
@@ -250,4 +261,27 @@ code {
 }
 .admonition.note p{
     color: var(--ui-color__white);
+}
+
+/* Lightbox Thumbnails */
+.thumb,
+.thumb img {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    float: none;
+    position: static;
+}
+
+.thumb.thumb-large,
+.thumb.thumb-large img {
+    display: inline-block;
+    max-width: 500px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    float: none;
+    position: static;
 }

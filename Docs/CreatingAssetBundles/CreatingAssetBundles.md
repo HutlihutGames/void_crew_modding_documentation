@@ -38,6 +38,9 @@ This is the base component needed for the asset to be loaded into the game. It h
 ![VoidCrewAsset](img/VoidCrewAsset.png)
 These fields are used to populate the asset's Context Info in the game. Context info is the data structure used to fill out the tooltips you see when looking at items or hovering over them in UI.
 
+The name of the asset will also be used for information regarding mod compatibility and other debugging info. So even assets that don't have tooltips
+should at least still have a name.
+
 **Note for Cosmetics**: Cosmetics use scriptable objects instead of prefabs for the assets. So the above fields are found on the cosmetic objects themselves instead of the Void Crew Asset component.
 ![ColorScheme](img/ColorScheme.png)
 
@@ -51,7 +54,7 @@ It is **IMPORTANT** that when you make **new** assets that you either:
 
 **Never** make your assets by modifying other examples or templates provided by us or other modders.
 Doing so will mean they have the same ID (GUID) in their metadata, which will cause problems for Void Crew loading
-the assets. 
+the assets.
 
 By duplicating or making the asset from scratch a new ID will be generated automatically, which ensures your assets will
 not conflict with assets created by others. Additionally, by ensuring your assets keep a unique ID you will also be able
@@ -65,3 +68,6 @@ Learn about how to create custom weapon mods and relics.
 
 **[Cosmetics](../Cosmetics/Cosmetics.md)**
 Learn about how to create custom cosmetics.
+
+**[Ship and Hub Visuals](../ShipCustomization/ShipAndHubVisuals.md)**
+Learn about how to create custom visuals for the Hub and different player Ships.

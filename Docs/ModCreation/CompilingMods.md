@@ -28,9 +28,11 @@ You'll need to setup the mod solution, which itself can be compiled into a mod.
 This is separate from your Unity Project where you setup the assets, and you'll need a separate mod solution for each mod.
 
 - Get the newest VCM Template. A copy of the template has been provided with the Sample Project [here](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Visual%20Studio%20Templates/VCMTemplate).
-- In Windows explorer go to the following directory: \
-  `%USERPROFILE%\Documents\Visual Studio <version>\Templates\ProjectTemplates\C#`
-  - (Replace `<version>` with your version of Visual Studio. For example: `\Visual Studio 2022\ `)
+- Unzip the VCM Template
+- Next you'll need to find the user templates location for your version of Visual Studio. If needed you can find where the user template folder location for the newest version of Visual Studio is [here](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=visualstudio).
+  - Visual Studio 2022: `%USERPROFILE%\Documents\Visual Studio <version>\Templates\ProjectTemplates\C#`
+    - (Replace `<version>` with your version of Visual Studio. For example: `\Visual Studio 2022\ `)
+  - Visual Studio 2026: `%USERPROFILE%\Documents\Visual Studio 18\Templates\ProjectTemplates\C#`
   - Copy the VCM Template folder to the directory
 
 You may need to update the Visual Studio Template Cache before you can proceed.

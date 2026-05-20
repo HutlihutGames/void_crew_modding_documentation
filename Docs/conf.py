@@ -17,6 +17,7 @@ release = '0.1.0'
 
 extensions = [
     "myst_parser",
+    "sphinxcontrib.lightbox2",
 ]
 
 source_suffix = {

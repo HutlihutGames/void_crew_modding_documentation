@@ -1,14 +1,4 @@
-# Cosmetics
-
-```{toctree}
-:hidden:
-:maxdepth: -1
-
-CosmeticColors
-CosmeticPatterns
-ArmorPieces
-HelmetProjections
-```
+# Creating Cosmetics
 
 Cosmetics are created as Scriptable Objects. You can see examples of custom cosmetics in the mod_cosmetics folder [of the sample project](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/mod_cosmetics)
 
