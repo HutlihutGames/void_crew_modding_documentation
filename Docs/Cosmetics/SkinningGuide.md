@@ -1,4 +1,4 @@
-# Skinning Guide
+# Tutorial: Skinning for Cosmetics
 This is a simple guide on how to skin a mesh to a bone in Blender.  
 You will need to do this to make your armor pieces follow the correct bones on the Ectype rig.
 

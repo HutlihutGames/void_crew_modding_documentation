@@ -54,6 +54,8 @@ To do this on Windows do the following:
 
 Once the folder is zipped, it is ready for either [installing via a mod manager](TestingModsLocally.md#testing-mods-using-mod-manager), or uploading to [ThunderStore](UploadingMods.md).
 
+To test locally, simply choose to import the zipped file as a local mod in your mod manager. You can read more details about that [here](TestingModsLocally.md#testing-mods-using-mod-manager). 
+
 ```{important}
 Asset bundles installed via mod managers require BepInEx as a dependency, in forder for Void Crew to know where to look for the .metem files. This dependency is automatically added to your Mod Descriptor by default.
 ```

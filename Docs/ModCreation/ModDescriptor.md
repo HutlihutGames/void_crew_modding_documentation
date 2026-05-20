@@ -10,6 +10,8 @@ Select the mod descriptor and fill out needed/relevant information.
 
 ![ModDescriptor](img/Unity_ModDescriptor.png)
 
+After making your mod descriptor, you can use the [Export as Mod](AssetMods.md#export-as-mod) function in the Toolbar.
+
 **Name**:
 Name of your Mod. Will also be used when exporting your mod.
 

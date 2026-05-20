@@ -14,7 +14,10 @@ About/About
 :caption: Introduction
 
 GettingStarted/GettingStarted
-GettingStarted/YourFirstMod
+GettingStarted/TutorialFirstMod
+GettingStarted/TutorialCarryable
+GettingStarted/TutorialCosmetic
+Cosmetics/SkinningGuide
 CreatingAssets/CreatingAssets
 CreatingAssets/ArtDirection
 GettingStarted/Glossary
@@ -29,7 +32,6 @@ Cosmetics/Cosmetics
 Cosmetics/CosmeticColors
 Cosmetics/CosmeticPatterns
 Cosmetics/ArmorPieces
-Cosmetics/SkinningGuide
 Cosmetics/HelmetProjections
 ```
 
@@ -90,17 +92,16 @@ The site covers documentation for how to create mods for Void Crew and how to us
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common): Public library used by Void Crew that mods can utilize for increased capabilities. 
 - The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample): Public sample Unity project which includes the common library, and features examples and helpers to get you started making Void Crew assets.
 
-Disclaimer: much of the documentation is still WIP.
-
 Follow the guides below in order to get started and progress through the full modding workflow.
 
 # Documentation Topics
 
 - **[Getting Started](GettingStarted/GettingStarted.md)**  
    Introduction and initial setup required before creating mods.
-
-- **[Your First Mod](GettingStarted/YourFirstMod.md)**  
-  Tutorial on how to create your first mod, step by step.
+    - [How to make your first mod](GettingStarted/TutorialFirstMod.md)
+    - [How to make a simple weapon stat mod](GettingStarted/TutorialCarryable.md)
+    - [How to make a wearable cosmetic](GettingStarted/TutorialCosmetic.md)
+    - [How to skin cosmetics](Cosmetics/SkinningGuide.md)
 
 - **[Creating Assets](CreatingAssets/CreatingAssets.md)**  
    Introduction on how to create assets for Void Crew, including:
