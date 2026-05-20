@@ -1,4 +1,4 @@
-﻿# Your first Cosmetic: Helmet
+﻿# Tutorial: Cosmetic Helmet
 In this tutorial, we will create a wearable helmet cosmetic from a 3D model. Most of the steps involved will be the same or similar for other wearable cosmetics as well.
 
 You do not need to know how to code for this guide. Some Blender or 3D modelling knowledge is recommended.

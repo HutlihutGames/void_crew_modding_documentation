@@ -86,6 +86,7 @@ When an enemy is killed, the rarity of the item(s) to drop is determined first, 
 - Floating: Can appear as floating freely in an area.
 - Chest: Can appear in chests.
 - Lore Terminal: Can appear in lore terminals.
+- ArmoryExchange: Can appear in the Armory side objective vault in place of regular weapon build boxes.
 
 **Drop Category**: 
 Determines which drop table the item should be added to.

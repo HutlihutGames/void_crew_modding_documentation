@@ -1,4 +1,4 @@
-﻿# Your First Mod
+﻿# Tutorial: Your First Mod
 This guide walks you through creating your first Void Crew mod inside Unity.
 
 You do not need to know how to code for this guide.
