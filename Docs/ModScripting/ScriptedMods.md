@@ -1,4 +1,4 @@
-# Compiling Mods
+# Scripted Mods
 This section covers how to build your own mods with more complex custom functionality using your own code. 
 This section is not needed if you only want to make mods that simply contain new assets (See "Asset Mods" chapter).
 
@@ -8,7 +8,7 @@ For more information on how to inject code into Void Crew, see the guide on [Har
 You will need to install necessary SDKs via Visual Studio in order to compile your mod into a format other players can use.
 
 You don't necessarily have to write your code in Visual Studio. You can use any preferred IDE for that. 
-But Visual Studio is recommending for setting up the template, and supports building the mod .dll in case your chosen IDE doesn't.
+But Visual Studio is recommended for setting up the template, and supports building the mod .dll in case your chosen IDE doesn't.
 
 We recommend using Visual Studio 2022 or later. You can get the newest free version of Visual Studio Community from [here](https://visualstudio.microsoft.com/downloads/).
 
@@ -92,4 +92,4 @@ In the sample solution, you can copy the code in ``ModdedAssetLoader`` into your
 
 After compiling your mod, you will then simply need to include the asset bundle file pairs with the .zip file of your mod. 
 
-Note that Mod Managers will unwrap all subfolders in .zip into one directory level. But you can still include subfolders in the .zip for organizational purposes. 
+Note that Mod Managers will unwrap all subfolders in .zip into one directory level. But you can still include subfolders in the .zip for organizational purposes.

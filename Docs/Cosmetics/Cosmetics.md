@@ -10,6 +10,5 @@ You can read more about how to create specific types of cosmetics in below chapt
 
 - **[Cosmetic Colors](CosmeticColors.md)**
 - **[Cosmetic Patterns](CosmeticPatterns.md)**
-- **[Cosmetic Patterns](CosmeticPatterns.md)**
 - **[Armor Pieces](ArmorPieces.md)**
 - **[Helmet Projections](HelmetProjections.md)**

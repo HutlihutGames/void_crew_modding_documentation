@@ -111,7 +111,7 @@ A circuit breaker is **inactive** when it needs a player to flip the lever (red 
 ## Dynamic Values
 Dynamic values will scale a modifier based on another external value. 
 
-Each dynamic values must be wrapped inside of a `"dynamic_value"` token, which must include
+Each dynamic value must be wrapped inside of a `"dynamic_value"` token, which must include
 a `"type"` token to specify which type of value it is.
 
 ### **Shared Properties**

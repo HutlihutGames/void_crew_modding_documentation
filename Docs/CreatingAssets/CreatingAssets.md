@@ -1,34 +1,5 @@
-# Asset Bundle Creation
-
-In your Unity Void Crew Samples Project, you can find various example assets. 
-These are added to the game at runtime by exporting them as **Unity Asset Bundles**.
-
-Each asset bundle will need to be located in its own folder, which must contain all dependencies (textures, meshes, audio, prefabs).
-What this means is that everything referenced by your assets (textures, materials, etc.) must be in within the folder for that asset bundle. 
-No references to outside that folder will be kept when exported.
-
-You can include multiple assets per asset bundle. Each prefab you want your mod to load at runtime must have the **Void Crew Asset** component at its root.
-
-To export your asset:
-1. Select the folder containing the asset and its dependencies (such as "mod_banana")
-2. In the toolbar at the top of Unity, select "Void Crew" and in the dropdown press Export Selected
-
-![ExportSelected](img/Unity_ExportSelected.png)
-
-You will find your exported asset at the root of your Unity Project folder, in a folder named "Exported Assets". 
-This should open automatically after exporting completes.
-
-There will be two files both named after the folder you used to export the asset bundle, with a ".metem" and ".manifest" filetype.
-
-**The ".metem" file is what you need to include in your mod.** The ".manifest" file is _not_ needed.
-
-_Note: if you cannot tell the files apart, [you need to enable file extensions in Windows explorer](https://support.microsoft.com/en-us/windows/common-file-name-extensions-in-windows-da4a4430-8e76-89c5-59f7-1cdbbc75cb01#id0ebf=windows_11)._
-
-## Size References
-If you want to create your own 3D assets, you will likely want some references for shape and scale. \
-[In the sample project](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/SizeReferences) 
-we have included reference FBX files that you can use in for example Blender and Unity. 
-
+# Creating Assets
+You can create various types of assets within Unity that Void Crew can natively load [by later exporting them into asset bundles](../ModCreation/AssetMods.md).
 ## Void Crew Asset
 This is the base component needed for the asset to be loaded into the game. It has the following fields:
 - **Name**: Name of the Asset
@@ -52,13 +23,18 @@ It is **IMPORTANT** that when you make **new** assets that you either:
 - Duplicate another asset and work on the duplicate
 - Make a new asset from scratch, and add the necessary components if it is not a scriptable object.
 
-**Never** make your assets by modifying other examples or templates provided by us or other modders.
+**Never** make your assets by modifying other examples or templates provided by the sample project or by other modders.
 Doing so will mean they have the same ID (GUID) in their metadata, which will cause problems for Void Crew loading
 the assets.
 
 By duplicating or making the asset from scratch a new ID will be generated automatically, which ensures your assets will
 not conflict with assets created by others. Additionally, by ensuring your assets keep a unique ID you will also be able
 to update the mod with the assets and the game to still know it is the same asset (so for example cosmetics stay equipped).
+
+## Size References
+If you want to create your own 3D assets, you will likely want some references for shape and scale. \
+[In the sample project](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/SizeReferences)
+we have included reference FBX files that you can use in for example Blender and Unity.
 
 ## Types of Void Crew Asset Bundles
 You can read more about how to create different types of asset bundles in the below chapters.

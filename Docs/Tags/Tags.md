@@ -2,6 +2,11 @@
 Void Crew uses a tag based system on objects that can be affected by stats. 
 These tags can be used to filter what the stat modifiers are applied to.
 
+You do not manually add these tags to anything yourself. Tags are listed here for their relation with stat modifiers.
+
+For example, if you are making a relic you do not need to manually add the _Carryable_ and _Carryable_Relic_ tags to the object. 
+Void Crew will add these tags automatically when the asset is loaded.
+
 ## Stat Modifier Tag Configuration
 Tags can be used in various ways to configure where a stat modifier is applied.
 Tags normally propagate downwards to other stat collections that are a part of the parent object.

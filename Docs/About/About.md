@@ -16,7 +16,7 @@ Follow the guides below in order to get started and progress through the full mo
 - **[Getting Started](../GettingStarted/GettingStarted.md)**  
   Introduction and initial setup required before creating mods.
 
-- **[Creating Asset Bundles](../CreatingAssetBundles/CreatingAssetBundles.md)**  
+- **[Creating Asset Bundles](../CreatingAssets/CreatingAssets.md)**  
   Introduction on how to create asset bundles for Void Crew, including:
     - [Carryable Weapon Mods and Relics](../Carryables/Carryables.md)
     - [Custom Cosmetics](../Cosmetics/Cosmetics.md)
@@ -24,7 +24,7 @@ Follow the guides below in order to get started and progress through the full mo
 - **[Asset Mods](../ModCreation/AssetMods.md)**  
   Introduction on how to make mods without custom code, using only asset bundles.
 
-- **[Compiling Mods](../ModCreation/CompilingMods.md)**  
+- **[Compiling Mods](../ModScripting/ScriptedMods.md)**  
   Introduction on how to compile your own mods, which can include your own custom scripts.
 
 - **[Code Injection with Harmony Patching](../ModScripting/HarmonyPatching.md)**  

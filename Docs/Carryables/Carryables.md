@@ -43,7 +43,7 @@ You can view a list of all the Void Crew stats and tags via the Stats Window and
 ![ExportSelected](img/Unity_VoidCrewToolbar.png)
 
 [In the sample project](https://github.com/HutlihutGames/void_crew_mods_sample/tree/master/Assets/StatModExamples) 
-you can find examples of modifiers written in JSON format for most Void Crew Relics, Weapon Mods and Homunculi
+you can find examples of modifiers written in JSON format for most Void Crew Relics, Weapon Mods and Homunculi (based on Void Crew 1.2.x).
 
 Read more about:
 - **[Stat Modifiers](../StatModifiers/StatModifiers.md)**
@@ -94,7 +94,7 @@ Determines which drop table the item should be added to.
 - **On Death Survivor 01**: Drops from enemy kills in survivor mode in the first and second wave.
 - **On Death Survivor 23**: Drops from enemy kills in survivor mode in the third and fourth wave.
 - **On Death Survivor 45**: Drops from enemy kills in survivor mode with fifth wave and onwards.
-- **Generic Drop**: Drops from generic containers floating in space which can be randomly found in sectors. Also 
+- **Generic Drop**: Drops from generic containers floating in space which can be randomly found in sectors. 
 - **Wreck_Ambush**: Loot found in Ambush bases.
 - **Wreck_Generic**: Loot found in random generic wrecks. Also includes raid, download, ambush and other asteroid bases.
 - **Wreck_METEM**: Wrecks that appear in Survivor and Interdiction. 

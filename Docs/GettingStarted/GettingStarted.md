@@ -11,29 +11,29 @@ You can enable the mod profile by adding the following launch option to Void Cre
 Automated switching to modded profile to be implemented later.
 
 ## Mod Manager
-First thing its important to know how mods are installed for Void Crew. 
+It's important to know how mods are installed for Void Crew before you get started. 
 
 Void Crew Mods are primarily distributed via [Thunderstore](https://thunderstore.io/c/void-crew/?included_categories=705&section=mods&ordering=top-rated)
 
 1. Install a Mod Manager. We recommend either [Gale](https://kesomannen.com/gale) or [R2ModMan](https://r2modman.com/download-v3-2-9/) as they have good support for installing locally built mods.
-2. With your chosen Mod Manager, install [VoidManager](https://thunderstore.io/c/void-crew/p/NihilityShift/VoidManager/). This is a community driven mod that has become the foundation behind Void Crew Modding, which we recommend all modders utilize.
-3. Test installing any published community mod. When playing modded Void Crew, you need to launch the game via the Mod Manager.
+2. Test installing any published community mod. When playing modded Void Crew, you need to launch the game via the Mod Manager.
 
 ## Installing Unity
-Installing the Unity Editor is required for exporting custom content (asset bundles) for the game. 
+You will need to install Unity in order to create custom assets and export them in a format that Void Crew can load. 
 We recommend using the same version as Void Crew, which currently uses **Unity Editor 2022.3.62f2**. 
 1. Install [Unity Hub](https://unity.com/download), if not already installed. If you do not have a Unity account, you can create a free one. 
-2. While you have Unity Hub open, use [this link](https://unity.com/releases/editor/whats-new/2022.3.62f2) to install the editor. You do not need to tick any of the optional modules for the install.
+2. While you have Unity Hub open, use [this link](https://unity.com/releases/editor/whats-new/2022.3.62f2) to install the required editor version. You do not need to tick any of the optional modules for the install.
 
 ## Installing Git
-We highly recommend using Git while developing mods. If you already use Git, you can skip this chapter.
+We highly recommend using Git while developing mods.
+If you already use Git, you can skip this chapter.
 
 Git is a version control system. It keeps track of changes you make to files, allowing you to:
 - Roll back to a previous working version if something breaks
 - See exactly what changed in your code
 - Experiment safely without losing your work
 
-For example, if you try a new feature and it causes your mod to stop working, Git lets you restore your project to an earlier state in seconds.
+For example, if you made a change and it causes your mod to stop working, Git lets you restore your project to an earlier state easily and helps you identify which change caused the problem.
 
 Git also makes it easy to download and update external resources such as:
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common)
@@ -44,13 +44,11 @@ No, Git works entirely on your computer. GitHub is an online hosting/publishing 
 - Collaborate with others
 - Share your source code
 - Publish your project as open source
+
 For many, Git will simply act as a **local backup and version history system**.
 
 ### Git Client  
 There are many options for Git clients available, installing most will also install Git itself on your system.
-
-Many coding IDEs also have Git built-in, and that can also work well for simple solo projects.
-If you're already comfortable using Git from within your editor, you can of course continue.
 
 Suggested Git Clients:
 - [GitHub Desktop](https://desktop.github.com/download/) (free)
@@ -58,14 +56,11 @@ Suggested Git Clients:
 - [GitKraken](https://www.gitkraken.com/) (free for public repositories)
 - [Fork](https://git-fork.com/) (free for evaluation)
 
-Our recommendation to using a separate client is because they can give you a better overview of changes and provide
-more functionality. Fork is good for both newcomers and advanced users as it has a very clean UI and is simple to use.
-
 ## Setting up the Void Crew Samples Project
 Next, you will want to setup a clone of the Void Crew Samples Project. 
-This template includes useful samples for getting started, and already includes the [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common).
+The project includes useful samples for getting started, and already includes the [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common).
 
-1. Use your chosen Git client to clone the [void_crew_mods_sample](https://github.com/HutlihutGames/void_crew_mods_sample) repository. _If you are not using a Git client, you can clone it directly from Github._
+1. Use your chosen Git client to clone the [void_crew_mods_sample](https://github.com/HutlihutGames/void_crew_mods_sample) repository. _If you are not using a Git client, you can download it directly from Github._
 2. In Unity Hub, press "Add" and select the folder containing the Void Crew Samples Project
 
 ## Other Tools

@@ -14,8 +14,13 @@ About/About
 :caption: Introduction
 
 GettingStarted/GettingStarted
-CreatingAssetBundles/CreatingAssetBundles
-CreatingAssetBundles/ArtDirection
+GettingStarted/TutorialFirstMod
+GettingStarted/TutorialCarryable
+GettingStarted/TutorialCosmetic
+Cosmetics/SkinningGuide
+CreatingAssets/CreatingAssets
+CreatingAssets/ArtDirection
+GettingStarted/Glossary
 ```
 
 ```{toctree}
@@ -27,7 +32,6 @@ Cosmetics/Cosmetics
 Cosmetics/CosmeticColors
 Cosmetics/CosmeticPatterns
 Cosmetics/ArmorPieces
-Cosmetics/SkinningGuide
 Cosmetics/HelmetProjections
 ```
 
@@ -56,7 +60,7 @@ Tags/Tags
 :caption: Mod Creation
 
 ModCreation/AssetMods
-ModCreation/CompilingMods
+ModCreation/ModDescriptor
 ModCreation/TestingModsLocally
 ModCreation/UploadingMods
 ```
@@ -66,6 +70,7 @@ ModCreation/UploadingMods
 :maxdepth: -1
 :caption: Mod Scripting
 
+ModScripting/ScriptedMods
 ModScripting/HarmonyPatching
 ```
 
@@ -74,6 +79,7 @@ ModScripting/HarmonyPatching
 :maxdepth: -1
 :caption: Debugging
 
+Debugging/DebugCamera
 Debugging/CheckingLogs
 Debugging/CommonIssues
 ```
@@ -86,35 +92,31 @@ The site covers documentation for how to create mods for Void Crew and how to us
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common): Public library used by Void Crew that mods can utilize for increased capabilities. 
 - The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample): Public sample Unity project which includes the common library, and features examples and helpers to get you started making Void Crew assets.
 
-Disclaimer: much of the documentation is still WIP.
-
 Follow the guides below in order to get started and progress through the full modding workflow.
 
 # Documentation Topics
 
 - **[Getting Started](GettingStarted/GettingStarted.md)**  
    Introduction and initial setup required before creating mods.
+    - [How to make your first mod](GettingStarted/TutorialFirstMod.md)
+    - [How to make a simple weapon stat mod](GettingStarted/TutorialCarryable.md)
+    - [How to make a wearable cosmetic](GettingStarted/TutorialCosmetic.md)
+    - [How to skin cosmetics](Cosmetics/SkinningGuide.md)
 
-- **[Creating Asset Bundles](CreatingAssetBundles/CreatingAssetBundles.md)**  
-   Introduction on how to create asset bundles for Void Crew, including:
+- **[Creating Assets](CreatingAssets/CreatingAssets.md)**  
+   Introduction on how to create assets for Void Crew, including:
    - [Carryable Weapon Mods and Relics](Carryables/Carryables.md)
    - [Custom Cosmetics](Cosmetics/Cosmetics.md)
    - [Custom Ship Visuals](ShipCustomization/ShipAndHubVisuals.md)
 
-- **[Asset Mods](ModCreation/AssetMods.md)**  
-   Introduction on how to make mods without custom code, using only asset bundles.
-
-- **[Compiling Mods](ModCreation/CompilingMods.md)**  
-   Introduction on how to compile your own mods, which can include your own custom scripts.
-
-- **[Code Injection with Harmony Patching](ModScripting/HarmonyPatching.md)**  
-   Introduction on how to inject code into Void Crew using Harmony.
+- **[Asset Bundle Mods](ModCreation/AssetMods.md)**  
+   Guide on how to make mods purely from assets created within Unity.
 
 - **[Testing Mods Locally](ModCreation/TestingModsLocally.md)**  
-   Steps for testing your mods locally before publishing.
+   Guide for testing your mods locally before publishing.
 
 - **[Uploading Mods](ModCreation/UploadingMods.md)**  
-   How to upload and share your mods.
+   Guide to uploading and publishing your mods.
 
 - **[Stat Modifiers](StatModifiers/StatModifiers.md)**  
    Documentation on Void Crew Stat Modifiers (StatMod).
@@ -124,6 +126,12 @@ Follow the guides below in order to get started and progress through the full mo
 
 - **[Tags](Tags/Tags.md)**  
     Documentation on Void Crew's tag system.
+
+- **[Compiling Mods](ModScripting/ScriptedMods.md)**  
+  Introduction on how to compile your own mods, which can include your own custom scripts.
+
+- **[Code Injection with Harmony Patching](ModScripting/HarmonyPatching.md)**  
+  Introduction on how to inject code into Void Crew using Harmony.
 
 # License and Contribution
 The documentation is licensed under our [Void Crew Modding Documentation License](https://github.com/HutlihutGames/void_crew_modding_documentation/blob/main/LICENSE). \
