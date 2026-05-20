@@ -44,3 +44,8 @@ For the time being, we recommend using the debugging tools published by Nihility
 - In the Debug Tools settings menu, press the disable progress button.
 - From the Hub or Ship, Press F10 to open the Spawn Menu. 
 - In the Spawn menu, you can now search for your modded carryables and spawn them for testing.
+
+## Testing Cosmetics
+All modded cosmetics will be unlocked by default, so you can equip them immediately via the Personal Loadout Terminal in-game.
+
+It can be difficult to judge how your cosmetic looks in first-person and via the terminal screen. You can use the [Debug Camera](../Debugging/DebugCamera.md) (aka. Marketing Camera) to view yourself in third-person.
