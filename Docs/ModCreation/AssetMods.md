@@ -46,13 +46,18 @@ To export your assets to a mod:
 This will create a mod folder with your `.metem` asset bundle and all the necessary files for mod managers and Thunderstore, based on the information in the Mod Descriptor.
 The mod folder will be placed within "Exported Mods" folder. The folder should open automatically after exporting completes.
 
-The final step is now to zip the mod folder.
+The final step is now to zip the contents of the mod folder.
 To do this on Windows do the following:
-- Right click your mod folder
+- Select all the files within your mod folder
+- Right click
 - Go to "Send To"
 - Choose "Compressed (zipped) Folder
 
-Once the folder is zipped, it is ready for either [installing via a mod manager](TestingModsLocally.md#testing-mods-using-mod-manager), or uploading to [ThunderStore](UploadingMods.md).
+Once the content is zipped, it is ready for either [installing via a mod manager](TestingModsLocally.md#testing-mods-using-mod-manager), or uploading to [ThunderStore](UploadingMods.md).
+
+```{important}
+On Thunderstore the files need to be at the root of the zip file. This is why zipping the folder itself might not work, and you need to zip the contents instead.
+```
 
 To test locally, simply choose to import the zipped file as a local mod in your mod manager. You can read more details about that [here](TestingModsLocally.md#testing-mods-using-mod-manager). 
 
