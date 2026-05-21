@@ -16,7 +16,10 @@ You can include multiple assets per asset bundle. Each prefab you want your mod 
 This export method is used for only exporting your assets to a `.metem` asset bundle. This is useful for when you need to quickly test new iterations of your assets in-game.
 
 To export your assets to a `.metem` asset bundle:
-1. Select the folder containing the asset(s) and its dependencies (such as "mod_banana")
+1. Select the folder containing the asset(s) and its dependencies (such as "mod_banana"). Make sure to select the folder not via the tree view.
+
+![UnityPackageManager](../GettingStarted/img/TheCorrectFolder.png)
+
 2. In the toolbar at the top of Unity, select "Void Crew" and in the dropdown press `Export Asset Bundle`
 
 ![ExportSelected](img/Unity_ExportSelected.png)
@@ -40,7 +43,10 @@ To use this method, you must first create a [Void Crew Mod Descriptor](ModDescri
 ![CreateModDescriptor](../ModCreation/img/Unity_CreateModDescriptor.png)
 
 To export your assets to a mod:
-1. Select the folder containing the asset(s) and its dependencies (such as "mod_banana"). The folder must contain a Mod Descriptor.
+1. Select the folder containing the asset(s) and its dependencies (such as "mod_banana"). The folder must contain a Mod Descriptor. Make sure to select the folder not via the tree view.
+
+![UnityPackageManager](../GettingStarted/img/TheCorrectFolder.png)
+
 2. In the toolbar at the top of Unity, select "Void Crew" and in the dropdown press `Export as Mod`
 
 This will create a mod folder with your `.metem` asset bundle and all the necessary files for mod managers and Thunderstore, based on the information in the Mod Descriptor.
