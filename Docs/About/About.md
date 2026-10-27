@@ -7,8 +7,6 @@ The site covers documentation for how to create mods for Void Crew and how to us
 - The [Void Crew Common Library](https://github.com/HutlihutGames/void_crew_common): Public library used by Void Crew that mods can utilize for increased capabilities.
 - The [Void Crew Samples Project](https://github.com/HutlihutGames/void_crew_mods_sample): Public sample Unity project which includes the common library, and features examples and helpers to get you started making Void Crew assets.
 
-Disclaimer: much of the below documentation is still WIP.
-
 Follow the guides below in order to get started and progress through the full modding workflow.
 
 # Documentation Topics
@@ -46,6 +44,8 @@ Follow the guides below in order to get started and progress through the full mo
   Documentation on Void Crew's tag system.
 
 # License and Contribution
+Make sure to read read the official [Void Crew Modding Policy](https://github.com/HutlihutGames/void_crew_common/blob/master/LICENSE)
+
 The documentation is licensed under our [Void Crew Modding Documentation License](https://github.com/HutlihutGames/void_crew_modding_documentation/blob/main/LICENSE). \
 This allows anyone to contribute and improve the documentation! \
 Contribution can be done via the [GitHub repository](https://github.com/HutlihutGames/void_crew_modding_documentation) where the documentation is hosted.
